@@ -352,7 +352,7 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
     padding: 4% 0;
     width: 100%;
     height: 100%;
-    padding-right: 150px;
+    padding-right: 100px;
     -webkit-transform: translateX(00%);
     transform: translateX(00%);
     
@@ -616,7 +616,7 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
     margin: 0 auto;
     margin: 4px 0 0 16px;
     font-family: GothicA1;
-    font-size: 16px;
+    font-size: 18px;
     color: #f4f4f4;
     white-space: pre-line;
     display: block;
@@ -731,7 +731,7 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
 .back img{    
     width: 100%;
     height: 100%;}
-}
+
 /* 모바일 */
 @media (min-width: 991px) and (max-width: 1251px){}
 

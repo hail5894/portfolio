@@ -67,8 +67,8 @@ function nav(){
     function pageActive(){
         $('.pageTri').show();
           $('.pageTri .pageTri_1').animate({
-                width: '70%',
-                height: '70%'
+                width: '50%',
+                height: '50%'
             },500, function () {
                     $('.pageTri .pageTri_1').animate({
                        width: '0%',
@@ -77,8 +77,8 @@ function nav(){
         
         
                  $('.pageTri').animate({
-                 right:'-20%',
-                bottom:'-30%'
+                 right:'-50%',
+                bottom:'-50%'
             },500, function () {
                      $('.pageTri').animate({
                        right: '0%',

@@ -176,13 +176,18 @@ main .resume .resume_1 .resume_left img {
 
 main .resume .resume_1 .resume_left h3 {
     padding-top: 2%;
-  -webkit-transform: translate(0, 42%);
-          transform: translate(0, 42%);
+
   font-family: Chakra Petch;
-  font-size: 24px;
+  font-size: 30px;
   color: #1a1a1a;
   font-weight: 500;
+    line-height: 1.2em;
 }
+main .resume .resume_1 .resume_left h3 span{
+    display: block;
+    padding-left: 20% !important;
+}
+
 
 main .resume .resume_1 .resume_left h3 span {
   padding-left: 20%;
@@ -202,7 +207,7 @@ main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p {
   display: -ms-flexbox;
   display: flex;
   font-family: GothicA1;
-  font-size: 18px;
+  font-size: 22px;
   color: #1a1a1a;
   margin-top: 5px;
 }
@@ -215,7 +220,7 @@ main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p img {
 
 main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p span {
   font-family: GothicA1;
-  font-size: 14px;
+  font-size: 16px;
   color: #1a1a1a;
   font-weight: bold;
   padding-left: 20px;

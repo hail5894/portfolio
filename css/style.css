@@ -2,7 +2,7 @@
 @import url("common.css");
 
 ::-webkit-scrollbar {
-    /*    display: none !important; */
+        display: none !important; 
 }
 
 html,

@@ -352,7 +352,7 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
     padding: 4% 0;
     width: 100%;
     height: 100%;
-    padding-right: 50px;
+    padding-right: 150px;
     -webkit-transform: translateX(00%);
     transform: translateX(00%);
     
@@ -373,8 +373,8 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
 .popup .popup_seat .popup_1 .popup_1_img {
     margin: 0 auto;
     padding-top: 5%;
-    width: 700px;
-    height: 620px;
+    width: 900px;
+    height: 720px;
 }
 
 .popup .popup_seat .popup_1 .popup_1_img img {
@@ -469,7 +469,7 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
     white-space: pre-line;
     display: block;
     font-family: NanumGothic;
-    font-size: 14px;
+    font-size: 18px;
     color: #f4f4f4;
     font-weight: normal;
     padding-left: 8%;
@@ -480,7 +480,7 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
     width: 100%;
     margin: 4px 0 0 16px;
     font-family: NanumGothic;
-    font-size: 14px;
+    font-size: 16px;
     color: #f4f4f4;
     white-space: pre-line;
     display: block;
@@ -548,7 +548,7 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
 .popup .popup_seat .popup_3 .right_detail .goto {
     width: 100%;
     font-family: Chakra Petch;
-    font-size: 20px;
+    font-size: 22px;
     color: #f4f4f4;
     text-decoration: none;
     text-align: right !important;

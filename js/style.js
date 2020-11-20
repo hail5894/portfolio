@@ -12,7 +12,10 @@ $(function () {
     var blen = true;
     
     $('main').on('scroll',function(e){
-       
+        e.preventDefault();
+        e.stopPropagation();
+       e.stopImmediatePropagation();
+        
     });
       
     //1.윈도우 스크롤 이벤트 발생

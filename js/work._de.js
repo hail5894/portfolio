@@ -1,5 +1,7 @@
 
 $(function () { 
+    
+     $('header').addClass('active');
     $('.work_de_1 a').on('mouseover',hover);
     
     

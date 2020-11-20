@@ -2,7 +2,7 @@
 @import url("common.css");
 
 ::-webkit-scrollbar {
-        display: none !important; 
+    /*    display: none !important; */
 }
 
 html,
@@ -373,7 +373,7 @@ main .main_2 .main_2_1 .tri {
 
 
 @media (min-width: 991px) and (max-width: 1251px) {
-    main {
+ /*   main {
         overflow: auto;
     }
 
@@ -386,7 +386,7 @@ main .main_2 .main_2_1 .tri {
         transform: translateY(0%) scale(1);
         top: 0;
         box-shadow: none;
-    }
+    }*/
 
     main .main_1 .main_1_1 div .art_head .art_head_1 h2 {
         font-size: 200px;
@@ -405,13 +405,10 @@ main .main_2 .main_2_1 .tri {
     }
 
     main .main_1 .main_1_1 div .art_main p {
-        width: 700px;
-        height: 700px;
+        width: 400px;
+        height: 400px;
     }
-   main .main_1 .main_1_1 div .art_main.active p {
-      width: 900px;
-        transition: 1s;
-    }
+ 
 
     /* 소개글 */
     main .main_2 {
@@ -441,22 +438,37 @@ main .main_2 .main_2_1 .tri {
         bottom: 7%;
         border-top: 300px solid #f4f4f4;
         border-right: 400px solid #1a1a1a;
+        
+        display: none;
     }
 
     .haha {
-        font-size: 24px;
+        font-size: 22px;
     }
-
+    main .main_2 .main_2_1 .main_2_1-1 span{
+        font-size: 650px;
+        margin: 0 auto;
+        padding-left: 3%;
+    }
+    main .main_2 .main_2_1 .more a h3{
+        font-size: 40px;
+    }
+    
+    main .main_2 .main_2_1 .more a p{
+        font-size: 16px;
+    }
     /* end */
 }
 
 @media (min-width: 769px) and (max-width: 990px) {
+   
     main {
         overflow: auto;
     }
 
-    main .main_1 {
+    main .main_1.active{
         height: 2200px;
+        padding-top: 0;
     }
 
     main .main_1 .main_1_1 {
@@ -464,7 +476,6 @@ main .main_2 .main_2_1 .tri {
         transform: translateY(0%) scale(1);
         top: 0;
         box-shadow: none;
-        padding-top: 5%;
     }
 
     main .main_1 .main_1_1 div .art_head .art_head_1 h2 {
@@ -529,6 +540,8 @@ main .main_2 .main_2_1 .tri {
         bottom: 0%;
         border-top: 200px solid #f4f4f4;
         border-right: 300px solid #1a1a1a;
+        
+        display: none;
     }
 
     main .main_1 .main_1_1 div .art_main2 .main_left ul,
@@ -555,8 +568,9 @@ main .main_2 .main_2_1 .tri {
         overflow: auto;
     }
 
-    main .main_1 {
-        height: 1700px;
+    main .main_1.active{
+        height: 1900px;
+        padding-top: 0;
     }
 
     main .main_1 .main_1_1 {
@@ -564,9 +578,10 @@ main .main_2 .main_2_1 .tri {
         transform: translateY(0%) scale(1);
         top: 0;
         box-shadow: none;
-        padding-top: 10%;
     }
-
+    main .main_1 .main_1_1 div{
+        padding-top: 2%;
+    }
     main .main_1 .main_1_1 div .art_head .art_head_1 h2 {
         font-size: 100px;
     }
@@ -618,11 +633,11 @@ main .main_2 .main_2_1 .tri {
 
     main .main_1 .main_1_1 div .art_main2 .main_left h3,
     main .main_1 .main_1_1 div .art_main2 .main_right h3 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     main .main_1 .main_1_1 div .art_main2 {
-        font-size: 13px;
+        font-size: 16px;
         display: block;
     }
 
@@ -638,6 +653,8 @@ main .main_2 .main_2_1 .tri {
         bottom: 0%;
         border-top: 100px solid #f4f4f4;
         border-right: 200px solid #1a1a1a;
+        
+        display: none;
     }
 
     main .main_1 .main_1_1 div .art_main2 .main_left ul,
@@ -664,16 +681,20 @@ main .main_2 .main_2_1 .tri {
         overflow: auto;
     }
 
-    main .main_1 {
+    main .main_1.active{
         height: 1600px;
+        padding-top: 0;
     }
-
+    
+    main .main_1 .main_1_1 div{
+        padding-top: 2%;
+    }
     main .main_1 .main_1_1 {
         position: static;
         transform: translateY(0%) scale(1);
         top: 0;
         box-shadow: none;
-        padding-top: 5%;
+        padding-top: 0%;
     }
 
     main .main_1 .main_1_1 div .art_head {
@@ -718,11 +739,11 @@ main .main_2 .main_2_1 .tri {
     }
 
     main .main_2 .main_2_1 .more a h3 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     main .main_2 .main_2_1 .more a p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     main .main_1 .main_1_1 div .art_main2 {
@@ -751,6 +772,8 @@ main .main_2 .main_2_1 .tri {
         bottom: 0%;
         border-top: 100px solid #f4f4f4;
         border-right: 200px solid #1a1a1a;
+        
+        display: none;
     }
 
     main .main_1 .main_1_1 div .art_main2 .main_left ul,
@@ -767,7 +790,7 @@ main .main_2 .main_2_1 .tri {
 
     /* 1124 폰트 */
     main .main_2 .main_2_1 .main_2_1-1 span {
-        font-size: 300px;
+        font-size: 320px;
     }
 
     /* end */

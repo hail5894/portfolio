@@ -1,5 +1,6 @@
 
 $(function () {
+     $('header').addClass('active');
     var index;
     $('.question').on('click',function(e){
         index= $(this).index();

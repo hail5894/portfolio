@@ -4,6 +4,7 @@
 
 html,body{
     overflow: hidden;
+      scroll-behavior: smooth;
 }
 main {
   
@@ -873,7 +874,8 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
         position: relative;
     }
     main .work_2_seat .work_2 .work_goods a .goods_img{
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
           height: 100%;
         background-color: transparent;
         margin-top: 0;

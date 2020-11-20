@@ -7,7 +7,7 @@ $(function () {
 
     //콜백함수쓰기
     function me(){
- 
+    
         $('.menu-trigger').on('click', function () {
             //메뉴부분
             $('header').addClass('active');
@@ -15,17 +15,15 @@ $(function () {
             $('.hea_cen').removeClass('active');
             $('.head_1').removeClass('active'); 
              $('.hea_bot').removeClass('active');
+          
+  
+        
             
             $('.menu-trigger').toggleClass('active');
             $('.nav').toggleClass('active');
             $('.contact a').toggleClass('active');
 
 
-            if (window.innerWidth < 991){
-                $('header').toggleClass('active');
-                $('.head_1').toggleClass('active');
-                $('.hea_bot').toggleClass('active');
-            }
 
 
         });
@@ -66,31 +64,25 @@ function nav(){
     //2페이지전환 종이
     function pageActive(){
         $('.pageTri').show();
-          $('.pageTri .pageTri_1').animate({
-                width: '50%',
-                height: '50%'
-            },500, function () {
-                    $('.pageTri .pageTri_1').animate({
-                       width: '0%',
-                       height: '0%'
-                    }, 500)}); 
-        
-        
-                 $('.pageTri').animate({
-                 right:'-50%',
-                bottom:'-50%'
-            },500, function () {
+         $('.pageTri').animate({
+                 right:'-40%',
+                bottom:'-40%'
+            },400, function () {
                      $('.pageTri').animate({
                        right: '0%',
                        bottom: '0%'
-                    }, 500)}); 
+                    }, 400)}); 
+        
+        setTimeout(function(){
+            $('.pageTri_1').fadeOut(400);
+        },300);
         
         var url, h =  ['index.html', 'work.html', 'about.html'];
         var hIndex= index;
          setTimeout(function(e) { 
             url=h[hIndex];
             $(location).attr('href',url);
-            }, 1000);
+            }, 800);
     }
     
 
@@ -149,8 +141,7 @@ $(function () {
         });
         
     }
-    
-  
+
     //end
 });
 

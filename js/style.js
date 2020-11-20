@@ -1,6 +1,8 @@
 
 $(function () {
     $('header').addClass('active');
+   
+  
   var m1 = 20000;
   $('body').append('<div class=m1_clone></div>');
   $('.m1_clone').height(m1);
@@ -19,6 +21,7 @@ $(function () {
     });
       
     //1.윈도우 스크롤 이벤트 발생
+    if($(window).width()>990){
       $(window).on('scroll',function(e){
         upDown();
         
@@ -56,11 +59,15 @@ $(function () {
         
        
         m1Ani(e);
-
-          
-          
-          
+     
       });
+    
+    }
+    
+//     if($(window).innerWidth<990){
+//          $('.main_1').removeClass('avtive'); 
+//         console.log('a')
+//       }
 
      setTimeout(function(){blen = false;},500);
     
@@ -182,6 +189,15 @@ $(function () {
         });
     
     
+    
+    
+    //모바일
+        if($(window).width() > 481 && $(window).width() < 530 ){
+            console.log('a')
+            $('.main_1').css({
+                 height: '2000px'
+            });
+        }
 });
 
 

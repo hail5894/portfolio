@@ -2,7 +2,7 @@
 $(function () { 
     var i=0, move=0,num=0;
     $('header').addClass('active');
-    
+    if($(window).width() > 991){    
     $('.work_2_seat').on('wheel DOMMouseScroll',function(e){
          var delta = 0;
          var E = e.originalEvent;
@@ -37,10 +37,25 @@ $(function () {
                 transition: '0.6s cubic-bezier(0,0,.2,1)'
         });
     });
-   
-    
-    
-    
+        
+        
+    $('.back').on('click',function(){
+        $('.popup').fadeOut(500);
+         $('.menu-trigger').animate({
+               top:'2%'
+            },100);
+        $('.back').hide();
+         $('.hea_cen').fadeIn(500);
+        
+        if($('.popup').hide()){
+         $('.popMove').css({
+            transform: 'translateX('+0+'%)'});
+            move=0;
+        }
+        $('.contact').fadeIn(500);
+    });
+        
+     
     //3.팝업 띄우기
     var index=0;
     $('.work_goods').on('click',function(e){
@@ -71,27 +86,17 @@ $(function () {
     $('.back').on('mouseover',function(){
         $(this).toggleClass('active');
     });
-    
-    $('.back').on('click',function(){
-        $('.popup').fadeOut(500);
-         $('.menu-trigger').animate({
-               top:'2%'
-            },100);
-        $('.back').hide();
-         $('.hea_cen').fadeIn(500);
+       
         
-        if($('.popup').hide()){
-         $('.popMove').css({
-            transform: 'translateX('+0+'%)'});
-            move=0;
-        }
-        $('.contact').fadeIn(500);
-    });
+        
+   }
     
     
-    //팝업 마우스 휠 했을떄
+    
 
-        
+    
+    
+    //팝업 마우스 휠 했을떄   
   var moveTop,deSet;
     $('.popup').on('wheel DOMMouseScroll',function(e){
         
@@ -138,6 +143,66 @@ $(function () {
             }, 1000);
         });
   
+    //모바일
+    if($(window).width() < 991){
+          
+        $('html,body').css({
+           overflow:'auto' 
+        });
+        
+    $('.work_1_port_3 span').eq(1).on('click',function(){
+           var a=  $('.work_1_port_3').offset().top
+            $(window).scrollTop(a);    
+        });
+        
+        
+        $('.back').on('click',function(){
+        $('.popup').fadeOut(500);
+         $('.menu-trigger').animate({
+               top:'30%'
+            },100);
+        $('.back').hide();
+         $('.hea_cen').fadeIn(500);
+        
+        if($('.popup').hide()){
+         $('.popMove').css({
+            transform: 'translateX('+0+'%)'});
+            move=0;
+        }
+        $('.contact').fadeIn(500);
+         $('.work_goods').height(220);  
+            
+    });
+         //3.팝업 띄우기
+    var index=0;
+    $('.work_goods').on('click',function(e){
+        e.preventDefault();
+        index=$(this).index();
+        $(this).css({
+            height:'100%'
+        })
+        $('.contact').hide();
+        $('.menu-trigger').animate({
+               top:'50%',
+               color: '#f4f4f4'
+            },100);
+        $('.back').show();
+        $('.popup').eq(index).fadeIn(2000);
+        
+//           $('header').addClass('active');
+//            $('.menu-trigger span').removeClass('active');
+//            $('.hea_cen').removeClass('active');
+//            $('.head_1').removeClass('active'); 
+//            $('.hea_bot').removeClass('active'); 
+    });
+    
+   
+    $('.back').on('mouseover',function(){
+        $(this).toggleClass('active');
+    });
+       
+        //모바일 end
+    }
     
     //end
 });

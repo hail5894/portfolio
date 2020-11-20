@@ -125,7 +125,7 @@ main .resume .resume_1 .resume_1_de:nth-of-type(1){
       border-top: none;
         padding: 2% 0;
 }
-main .resume .resume_1 .resume_1_de:nth-of-type(7) {
+main .resume .resume_1 .resume_1_de:nth-of-type(8) {
   border-bottom: 1px dashed #eb5938;
 }
 
@@ -139,6 +139,9 @@ main .resume .resume_1 .resume_1_de {
   display: flex;
 }
 
+.resume_1_de_p{
+    display: block !important;
+}
 main .resume .resume_1 .resume_1_de h3 {
   text-transform: uppercase;
   font-family: Chakra Petch;
@@ -239,8 +242,13 @@ main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p span {
     main .resume .resume_1 .resume_1_de:nth-of-type(1){
         border-top: none;
     }
+    
+     main .resume .resume_1 .resume_left img{
+        width: 350px;
+        height: 350px;
+    }
     main .resume .resume_1 .resume_left h3{
-        font-size: 40px;
+        font-size: 30px;
     }
     
     main .resume .resume_1 .resume_1_de h3{
@@ -268,6 +276,8 @@ main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p span {
         width: 20px;
         height: 20px;
     }
+    
+   
     /*end*/
 }
 
@@ -282,7 +292,7 @@ main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p span {
         border-top: none;
     }
     main .resume .resume_1 .resume_left h3{
-        font-size: 30px;
+        font-size: 25px;
       
     }
     
@@ -380,33 +390,60 @@ main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p span {
      main{padding-left: 0;}
     main .work_1{display: none;}
     main .resume{
-        padding-top: 8%;
+        padding-top: 12%;
     }
      main .resume .resume_1 .resume_1_de:nth-of-type(1){
-        border-top: none;
+        display: none;
     }
     
     main .resume .resume_1 .resume_1_de{
-        padding: 17px 0 10px 10%;
+        padding: 17px 0 10px 5%;
     }
+    main .resume .resume_1 .resume_1_de:nth-of-type(7){
+        display: block;
+        padding: 5px 0 5px 5%;
+    }
+    
+     main .resume .resume_1 .resume_1_de:nth-of-type(7) p{
+         line-height: 1;
+        padding-left: 10%;
+    }
+    
+    main .resume .resume_1 .resume_1_hi{
+        display: block;
+        padding: 5px 0 5px 5%;
+    }
+    
+    main .resume .resume_1 .resume_1_hi .question{
+        line-height: 1.6em;
+        padding-left: 10%;
+    }
+    
+    main .resume .resume_1 .resume_1_hi .question:nth-of-type(1){
+       margin-top: 3%;
+    }
+
     main .resume .resume_1{
         margin-top: 0;
     }
     main .resume h2{
-        padding-left: 40px;
+        padding-left: 20px;
+        border-bottom: none;
+        font-size: 70px;
+        padding-bottom: 10px;
     }
     
     main .resume .resume_1 .resume_left{
         width: 100%;
-        left: 70%;
+        left: 0%;
         top: 0;
        /* display: flex;
         justify-content: space-around;*/
-        padding-bottom: 0;
+        display: none;
     }
     main .resume .resume_1 .resume_left img{
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
     
     main .resume .resume_1 .resume_left h3{
@@ -415,8 +452,8 @@ main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p span {
         display: none;
     }
     main .resume .resume_1 .resume_1_de h3{
-        font-size: 16px;
-        width: 140px;
+        font-size: 22px;
+        width: 180px;
     }
     
     main .resume .resume_1 .resume_left h3 span{
@@ -428,7 +465,7 @@ main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p span {
         font-size: 12px;
     }
     main .resume .resume_1 .resume_1_de p{
-        font-size: 12px;
+        font-size: 16px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -445,5 +482,100 @@ main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p span {
     
     /*end*/
 }
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    
+    main{padding-left: 0;}
+    main .work_1{display: none;}
+    main .resume{
+        padding-top: 15%;
+    }
+     main .resume .resume_1 .resume_1_de:nth-of-type(1){
+        display: none;
+    }
+    
+    main .resume .resume_1 .resume_1_de{
+        padding: 17px 0 10px 5%;
+    }
+    main .resume .resume_1 .resume_1_de:nth-of-type(7){
+        display: block;
+        padding: 5px 0 5px 5%;
+    }
+    
+     main .resume .resume_1 .resume_1_de:nth-of-type(7) p{
+         line-height: 1;
+        padding-left: 5%;
+    }
+    
+    main .resume .resume_1 .resume_1_hi{
+        display: block;
+        padding: 5px 0 5px 5%;
+    }
+    
+    main .resume .resume_1 .resume_1_hi .question{
+        line-height: 1.6em;
+        padding-left: 5%;
+    }
+    
+    main .resume .resume_1 .resume_1_hi .question:nth-of-type(1){
+       margin-top: 3%;
+    }
+
+    main .resume .resume_1{
+        margin-top: 0;
+    }
+    main .resume h2{
+        padding-left: 20px;
+        padding-bottom: 10px;
+        border-bottom: none;
+        font-size: 60px;
+    }
+    
+    main .resume .resume_1 .resume_left{
+        width: 100%;
+        left: 0%;
+        top: 0;
+       /* display: flex;
+        justify-content: space-around;*/
+        display: none;
+    }
+    main .resume .resume_1 .resume_left img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    main .resume .resume_1 .resume_left h3{
+        font-size: 20px;
+        transform:translate(-5%,0);
+        display: none;
+    }
+    main .resume .resume_1 .resume_1_de h3{
+        font-size: 20px;
+        width: 160px;
+    }
+    
+    main .resume .resume_1 .resume_left h3 span{
+        padding-left: 20px;
+    }
+      main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p span{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 12px;
+    }
+    main .resume .resume_1 .resume_1_de p{
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p{
+        font-size: 14px;
+    }
+    main .resume .resume_1 .resume_1_hi .resume_1_hi_1 .question p img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    
+    
+}
 /*# sourceMappingURL=about.css.map */

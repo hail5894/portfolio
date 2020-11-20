@@ -110,7 +110,8 @@ function nav(){
     
 function x(){
      //contact 
-    $('.contact').on('click',function(){
+    $('.contact').on('click',function(e){
+        e.preventDefault();
         $('.contact_popup').fadeIn(300);
 
     });

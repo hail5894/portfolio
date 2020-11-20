@@ -1,0 +1,439 @@
+@charset "UTF-8";
+@import url("common.css");
+
+/* 모바일 */
+@media (min-width: 991px) and (max-width: 1251px){
+    
+    
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+    .popup{
+        padding-top: 6%;
+        display: none;
+    }
+    .popup .popup_scroll_1 a{
+        font-size: 14px;
+        padding-top: 36px;
+    }
+    .popup .popup_scroll_1 a span{
+        width: 20px;
+        height: 35px;
+        margin-left: -10px;
+    }
+    .popup .popup_scroll_1 a span:before{
+        width: 3px;
+        height: 3px;
+        margin-left: -1px;
+    }
+    .popup .popup_scroll_1{
+    bottom: 50%;
+    right: 2%;
+    }
+    /*1*/
+    .popup .popup_seat .popup_1{
+        padding-top: 16%;
+        transform: translateX(000%);
+    }
+    .popup .popup_seat .popup_1 .popup_1_title h2{
+        font-size: 45px;
+        text-align: center;
+    }
+    .popup .popup_seat .popup_1 .popup_1_img{
+        width: 80%;
+        margin: 0 auto;
+        height: 450px;
+        padding-left: 2%;
+    }
+    /*2*/
+    .popup_2_text{font-size: 12px !important;}
+    .popup .popup_seat .popup_2{
+        padding-top: 3%;
+        transform: translateX(000%);
+        padding-left: 0;
+        display: block;
+    }
+    
+    .popup .popup_seat .popup_2 .left_img{
+        margin-left: 0;
+        width: 100%;
+        display: flex; flex-direction: row;
+        justify-content: space-around;
+        height: 280px;
+    }
+    
+    .popup .popup_seat .popup_2 .left_img img{
+        width: 40%;
+    }
+    .popup .popup_seat .popup_2 .right_detail{
+        margin-left: 2%;
+        width: 50%;
+        height: 50%;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 p{
+        font-size: 20px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 span{
+        font-size: 14px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 text{
+        margin: 0;
+        font-size: 13px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .popup_2_last{
+        position: absolute;
+        right: -94%;
+        top: 8%;
+    }
+    /*3*/
+
+    .popup .popup_seat .popup_3{
+        padding-top: 3%;
+        transform: translateX(-100%);
+        padding-left: 0;
+        display: block;
+    }
+    
+    .popup .popup_seat .popup_3 .left_img{
+        margin-left: 0;
+        width: 100%;
+        display: flex; flex-direction: row;
+        justify-content: space-around;
+        height: 280px;
+    }
+       
+    .popup_3_img{
+    height: 280px;
+    }
+    
+    .popup .popup_seat .popup_3 .left_img img{
+        width: 40%;
+    }
+    .popup .popup_seat .popup_3 .right_detail{
+        margin-left: 2%;
+        width: 50%;
+        height: 50%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .h2 h2{
+        font-size: 50px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        font-size: 20px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 text{
+        font-size: 14px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1:nth-of-type(3){
+        position: absolute;
+        right: -94%;
+         top: 22%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .h2_top{
+        padding-top: 10%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .goto{
+        position: absolute;
+        right: -90%;
+        bottom: 8%;
+        font-size: 28px;
+    }
+    
+    .popup_3_detail{
+        width: 100% !important;
+    }
+ /*end*/
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+     .popup{
+        padding-top: 6%;
+         height: 100vh;
+    }
+    .popup .popup_scroll_1 a{
+        font-size: 14px;
+        padding-top: 36px;
+    }
+    .popup .popup_scroll_1 a span{
+        width: 20px;
+        height: 35px;
+        margin-left: -10px;
+    }
+    .popup .popup_scroll_1 a span:before{
+        width: 3px;
+        height: 3px;
+        margin-left: -1px;
+    }
+    .popup .popup_scroll_1{
+    bottom: 50%;
+    right: 2%;
+    }
+    /*1*/
+    .popup .popup_seat .popup_1{
+        padding-top: 16%;
+        transform: translateX(-200%);
+    }
+    .popup .popup_seat .popup_1 .popup_1_title{
+        padding-left: 10%;
+        text-align: center;
+    }
+    .popup .popup_seat .popup_1 .popup_1_title h2{
+        font-size: 40px;
+    }
+    .popup .popup_seat .popup_1 .popup_1_img{
+        width:80%;
+        margin: 0 auto;
+        height: 450px;
+        padding-left: 2%;
+        padding-top: 15%;
+       
+    }
+    /*2*/
+    .popup_2_text{font-size: 12px !important;}
+    .popup .popup_seat .popup_2{
+        transform: translateX(-200%);
+        padding-left: 0;
+        display: block;
+    }
+    
+    .popup .popup_seat .popup_2 .left_img{
+        margin-left: 0;
+        width: 100%;
+        display: flex; flex-direction: row;
+        justify-content: space-around;
+        height: 280px;
+         display: none;
+    }
+    
+    .popup .popup_seat .popup_2 .left_img img{
+        width: 40%;
+    }
+    .popup .popup_seat .popup_2 .right_detail{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 4%;
+     
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 p{
+        font-size: 20px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 span{
+        font-size: 14px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 text{
+        margin: 0;
+        font-size: 13px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .popup_2_last{
+      /*  position: absolute;
+        right: -94%;
+        top: 8%;*/
+    }
+    /*3*/
+  
+    .popup .popup_seat .popup_3{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        transform: translateX(-200%);
+        padding-left: 2%;
+        display: block;
+        position: relative;
+    }
+    
+    .popup .popup_seat .popup_3 .left_img{
+        margin-left: 0;
+        width: 100%;
+        position: absolute;
+        left: 55%;
+        top: -25%;
+    }
+    
+
+    .popup .popup_seat .popup_3 .left_img img:nth-of-type(2){
+        display: none;
+    }   
+   
+    .popup .popup_seat .popup_3 .left_img img{
+        width: 40%;
+    }
+    .popup .popup_seat .popup_3 .right_detail{
+        margin-left: 2%;
+        width: 100%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .h2 h2{
+        font-size: 40px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        font-size: 20px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 text{
+        font-size: 14px;
+        margin: 0;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        padding-top: 0;
+    }
+
+    .popup .popup_seat .popup_3 .right_detail .h2_top{
+        padding-top: 10%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .goto{
+      padding-right: 5%;
+        font-size: 28px;
+    }
+    
+    .popup_3_detail{
+        width: 100% !important;
+    }
+    
+   /*end*/ 
+}
+
+@media (max-width: 480px) {
+     .popup{
+        padding-top: 6%;
+         height: 100vh;
+         
+         display: none;
+    }
+    .popup .popup_scroll_1 a{
+        font-size: 11px;
+        padding-top: 40px;
+    }
+    .popup .popup_scroll_1 a span{
+        width: 18px;
+        height: 30px;
+        margin-left: -10px;
+        
+        padding-top: 5px; 
+    }
+    .popup .popup_scroll_1 a span:before{
+        width: 3px;
+        height: 3px;
+        margin-left: -1px;
+    }
+    .popup .popup_scroll_1{
+    bottom: 50%;
+    right: 2%;
+    }
+    /*1*/
+    .popup .popup_seat .popup_1{
+        padding-top: 16%;
+        transform: translateX(-100%);
+    }
+    .popup .popup_seat .popup_1 .popup_1_title{
+        padding-left: 10%;
+        text-align: center;
+    }
+    .popup .popup_seat .popup_1 .popup_1_title h2{
+        font-size: 28px;
+    }
+    .popup .popup_seat .popup_1 .popup_1_img{
+        width:80%;
+        margin: 0 auto;
+        height: 300px;
+        padding-left: 2%;
+        padding-top: 15%;
+       
+    }
+    /*2*/
+    .popup_2_text{
+        font-size: 12px !important;
+    }
+    .popup .popup_seat .popup_2{
+        padding-top: 5%;
+        transform: translateX(-100%);
+        padding-left: 0;
+        display: block;
+    }
+    
+    .popup .popup_seat .popup_2 .left_img{
+        margin-left: 0;
+        width: 100%;
+        display: flex; flex-direction: row;
+        justify-content: space-around;
+        height: 280px;
+         display: none;
+    }
+    
+    .popup .popup_seat .popup_2 .left_img img{
+        width: 40%;
+    }
+    .popup .popup_seat .popup_2 .right_detail{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 4%;
+     
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 p{
+        font-size: 16px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 span{
+        font-size: 13px !important;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 text{
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.3em;
+        padding-left: 0;
+         padding: 0 1%;
+    }
+    
+    .popup .popup_seat .popup_2 .right_detail .right_de_1:last-of-type p{
+        padding-top: 0;
+    }
+    .popup .popup_seat .popup_2 .right_detail .popup_2_last{
+      /*  position: absolute;
+        right: -94%;
+        top: 8%;*/
+    }
+    
+    
+    /*3*/
+    .popup .popup_seat .popup_3{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        transform: translateX(-100%);
+        padding-left: 2%;
+        display: block;
+        position: relative;
+    }
+    
+    .popup .popup_seat .popup_3 .left_img{
+        
+        display: none;
+    }
+    
+
+    .popup .popup_seat .popup_3 .right_detail{
+        margin-left: 2%;
+        width: 100%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .h2 h2{
+        font-size: 30px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        font-size: 16px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 text{
+        font-size: 12px;
+        margin: 0;
+       
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        padding-top: 0;
+    }
+
+    .popup .popup_seat .popup_3 .right_detail .h2_top{
+        padding-top: 10%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .goto{
+      padding-right: 5%;
+        font-size: 24px;
+    }
+    
+    .popup_3_detail{
+        width: 100% !important;
+    }
+    
+    /*end*/
+}

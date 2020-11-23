@@ -24,7 +24,7 @@ $(function () {
               i-=100;
               num-=1
         }
-        if(i<-1100) i=-1100;
+        if(i<-1300) i=-1300;
         if(i>1) i=0;
         
         
@@ -136,10 +136,11 @@ $(function () {
   
 
     //work 이동
-    $('.goods_detail a').on('click',function(e){
+    $('.goods_detail').on('click',function(e){
      e.preventDefault();  
         $('.pageTri').css({
-           background:'#f4f4f4'
+            background:'#f4f4f4',
+            border: '1px solid #333'
        });
         $('.pageTri').show();
      

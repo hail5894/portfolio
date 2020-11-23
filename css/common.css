@@ -526,7 +526,7 @@ height: 100%;
     overflow: hidden;
     transform: scale(0.3);
     transform-origin: 100% 100%;
-    transition: .8s;
+    transition: 1s;
     
     display: none;
 }

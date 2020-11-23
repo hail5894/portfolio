@@ -65,13 +65,12 @@ function nav(){
      
         setTimeout(function(){$('.pageTri').addClass('active');},10);
           
-      
-        
         var url, h =  ['index.html', 'work.html', 'about.html'];
         var hIndex= index;
          setTimeout(function(e) { 
+             $('body').addClass('active');
              url=h[hIndex];$(location).attr('href',url);
-            $('body').addClass('active');
+          
             },50);
      
          

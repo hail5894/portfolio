@@ -114,9 +114,7 @@ $(function () {
             if($('.work_1').css("display") == "none"){
             $('.art_main').removeClass('active');
             }
-    
-               
-               
+   
            }
     
     };

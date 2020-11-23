@@ -197,12 +197,7 @@ $(function () {
             },100);
         $('.back').show();
         $('.popup').eq(index).fadeIn(2000);
-        
-//           $('header').addClass('active');
-//            $('.menu-trigger span').removeClass('active');
-//            $('.hea_cen').removeClass('active');
-//            $('.head_1').removeClass('active'); 
-//            $('.hea_bot').removeClass('active'); 
+
     });
     
    

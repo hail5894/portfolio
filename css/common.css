@@ -38,7 +38,7 @@
 }
 body{
     opacity: 0;
-    transition: .3s;
+    transition: .1s;
 }
 body.active{
     opacity: 1;
@@ -526,7 +526,7 @@ height: 100%;
     overflow: hidden;
     transform: scale(0.3);
     transform-origin: 100% 100%;
-    transition: 1s;
+    transition: .8s;
     
     display: none;
 }
@@ -542,6 +542,9 @@ height: 100%;
     z-index: 2;
     
 }
+
+.pageTri2 {background: #f4f4f4;}
+.pageTri2::before {background: #333;}
 
 
 .pageTri.active{

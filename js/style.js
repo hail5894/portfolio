@@ -83,6 +83,9 @@ $(function () {
               
             
         //css 노가다    
+        var paged = localStorage.page;
+            
+            localStorage.page = 1;
         if(m1.scale==1){  
             //css 정리
              $('.main_1').removeClass('active');
@@ -96,6 +99,8 @@ $(function () {
             //사진 active
             if($('.work_1').css("display") == "block"){
             $('.art_main').addClass('active');
+                
+            localStorage.page = 0;
             }
            
            }else{
@@ -114,7 +119,6 @@ $(function () {
             if($('.work_1').css("display") == "none"){
             $('.art_main').removeClass('active');
             }
-   
            }
     
     };
@@ -165,7 +169,7 @@ $(function () {
                url = "./work.html";
               $(location).attr('href',url);
                 $('body').addClass('active');
-            }, 50);
+            }, 100);
      
      
         

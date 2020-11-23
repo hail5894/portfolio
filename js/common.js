@@ -55,26 +55,30 @@ function nav(){
     //메인
     $('.main_2_1 .more a').on('click',function(e){
           e.preventDefault();
-         localStorage.fix=1;
+          localStorage.fix=1;
     });
-      
-    //2페이지전환 종이
     
+    //2페이지전환 종이
     function pageActive(){
         $('.pageTri').show();
-     
-        setTimeout(function(){$('.pageTri').addClass('active');},10);
-          
+        
+        setTimeout(function(){
+            if(page = 0){
+                $('.pageTri').addClass('pageTri2');
+            }else{
+                   $('.pageTri').removeClass('pageTri2');
+            }
+            
+            $('.pageTri').addClass('active');
+        },10);
         var url, h =  ['index.html', 'work.html', 'about.html'];
         var hIndex= index;
          setTimeout(function(e) { 
              $('body').addClass('active');
-             url=h[hIndex];$(location).attr('href',url);
-          
+             url=h[hIndex];
+             $(location).attr('href',url);
             },50);
-     
-         
-    }
+        }
     
 
      //3.마우스 움직이기 active
@@ -82,8 +86,7 @@ function nav(){
          $('.navLi').removeClass('active');
            $(this).addClass('active'); 
         });
-         
-  
+    
 
 }
 
@@ -93,7 +96,6 @@ function nav(){
 function x(){
      //contact 
     if($(window).width()>991){
-        console.log('a')
     $('.contact').on('click',function(e){
         e.preventDefault();
         $('.contact_popup').fadeIn(300);

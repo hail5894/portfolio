@@ -77,7 +77,6 @@ $(function () {
         $('.menu-trigger').animate({
                top:'50%',
                color: '#f4f4f4'
-            
             },100);
         $('.back').show();
     });
@@ -85,9 +84,7 @@ $(function () {
    
     $('.back').on('mouseover',function(){
         $(this).toggleClass('active');
-    });
-       
-        
+    });  
         
    }
     
@@ -97,9 +94,17 @@ $(function () {
     
     
     //팝업 마우스 휠 했을떄   
-  var moveTop,deSet;
-    $('.popup').on('wheel DOMMouseScroll',function(e){
-        
+  var moveTop,deSet,idx=0;
+    $('.popup').on('wheel DOMMouseScroll',popup);
+    
+    if($(window).width() < 1500){
+    $('.popMove').css({
+    transform: 'translateX('+0+'%)'});
+    $('.popup_scroll_1').hide();
+    $('.popup').on('click',popup_1);
+    }
+    
+    function popup(e){
         clearTimeout(deSet);
         deSet = setTimeout(function(){
             e.originalEvent.deltaY < 0 ? move+=100 : move-=100;
@@ -112,40 +117,45 @@ $(function () {
                 transition: '0.5s ease-in-out'   
              });
         },100);
- 
-    });
+    }
+  
+    function popup_1(){
+        idx++;
+        if(idx > 2){ 
+            idx=0;
+            alert('마지막 화면입니다.');
+        }
+        if(idx<0)  idx=0;
+             $('.popMove').css({
+                transform: 'translateX(-'+(idx*100)+'%)',
+                transition: '0.5s ease-in-out'   
+             });
+        
+        console.log(idx)
+    }
   
 
     //work 이동
     $('.goods_detail a').on('click',function(e){
      e.preventDefault();  
-        $('.pageTri').show()
-         $('.pageTri').css({
-            bottom:'100%',
-            right:'100%',
-            background:'#f4f4f4'
-            }); 
+        $('.pageTri').css({
+           background:'#f4f4f4'
+       });
+        $('.pageTri').show();
+     
+        setTimeout(function(){$('.pageTri').addClass('active');},10);
         
-                     
-        $('.pageTri').animate({
-                right:'30%',
-                bottom:'30%'
-            },400, function () {
-                 $('.pageTri').animate({
-                   right: '0%',
-                   bottom: '0%'
-                }, 400)}); 
         
         var url;
          setTimeout(function(e) { 
                url = "./work_de.html";
-                $(location).attr('href',url);
-            }, 1000);
+              $(location).attr('href',url);
+                $('body').addClass('active');
+            }, 50);
         });
   
     //모바일
     if($(window).width() < 991){
-          
         $('html,body').css({
            overflow:'auto' 
         });
@@ -154,8 +164,6 @@ $(function () {
            var a=  $('.work_1_port_3').offset().top
             $(window).scrollTop(a);    
         });
-        
-        
         $('.back').on('click',function(){
         $('.popup').fadeOut(500);
          $('.menu-trigger').animate({
@@ -199,6 +207,7 @@ $(function () {
    
     $('.back').on('mouseover',function(){
         $(this).toggleClass('active');
+         idx=0;
     });
        
         //모바일 end

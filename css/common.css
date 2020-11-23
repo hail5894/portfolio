@@ -1,4 +1,4 @@
-@charset "UTF-8";
+    @charset "UTF-8";
 @font-face {
   font-family: Chakra Petch;
   src: url(font/ChakraPetch-Medium.ttf);
@@ -36,7 +36,13 @@
     font-display: swap;
   /* 한글 font-family: 'Noto Serif KR', serif; 400,700 */
 }
-
+body{
+    opacity: 0;
+    transition: .3s;
+}
+body.active{
+    opacity: 1;
+}
 html {
   cursor: url(../img/common/5.png), auto;
 }
@@ -55,7 +61,7 @@ header {
   width: 50px;
   height: 100%;
   z-index: 200;
-background: #f4f4f4;
+ background: #f4f4f4;
 
 }
 
@@ -249,7 +255,7 @@ height: 100%;
 .nav ul li a {
   text-decoration: none;
   font-family: Chakra Petch;
-  font-size: 170px;
+  font-size: 150px;
   color: #f4f4f4;
   font-weight: 500;
   position: relative;
@@ -502,111 +508,6 @@ height: 100%;
 
 
 
-/*
-.contact_popup .right .contact_form {
-  clear: both;
-  text-align: center;
-}
-
-.contact_popup .right .contact_form .contact_form_1 {
-  float: left;
-  width: 50%;
-  list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.contact_popup .right .contact_form .contact_form_1 li {
-  width: 80%;
-  margin-bottom: 60px;
-  text-align: left;
-  position: relative;
-}
-
-.contact_popup .right .contact_form .contact_form_1 li .contact_form_1_input {
-  width: 100%;
-  font-size: .9rem;
-  line-height: 2rem;
-  border: 0;
-  background: transparent;
-  outline: 0;
-}
-
-.contact_popup .right .contact_form .contact_form_1 li label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: .5;
-  z-index: -1;
-  -webkit-transition: .2s;
-  transition: .2s;
-  font-weight: 100;
-  font-family: GothicA1;
-  font-size: 14px;
-  color: #f4f4f4;
-}
-
-.contact_popup .right .contact_form .contact_form_1 li:before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #f4f4f4;
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.contact_popup .right .contact_form_2 {
-  float: right;
-  width: 50%;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-}
-
-.contact_popup .right .contact_form_2 .contact_form_2_1 {
-  height: 320px;
-  padding: 10px;
-  border: 2px solid #262626;
-  font-size: .9rem;
-}
-
-.contact_popup .right .contact_form_2 label {
-  font-family: GothicA1;
-  font-size: 14px;
-  color: #1a1a1a;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  cursor: auto;
-  opacity: .5;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.contact_popup .right .contact_form_2 small {
-  font-family: GothicA1;
-  font-size: 12px;
-  color: #eb5938;
-}
-
-.contact_popup .right .submit {
-  width: 100%;
-  margin-top: 40px;
-  border: 1px solid #f4f4f4;
-  line-height: 3em;
-  color: #f4f4f4;
-  cursor: pointer;
-  background: #1a1a1a;
-}*/
-
 .contact_3{display: none;}
 .contact_3 img{
   width: 25px;
@@ -616,53 +517,49 @@ height: 100%;
 /*화면전환*/
 .pageTri {
     position: fixed;
-    right: -90%;
-    bottom: -90%;
-    width: 100%;
-    height: 100%;
-    background: #f4f4f4;
+    right: 0%;
+    bottom: 0%;
+    width: 20vw;
+    height: 20vw;
+    background: #333;
     z-index: 200;
     overflow: hidden;
-    border: 1px solid rgba(26,26,26,.25);
+    transform: scale(0.3);
+    transform-origin: 100% 100%;
+    transition: .8s;
     
     display: none;
 }
-
-
-/*
-.pageTri .pageTri_1 {
-    position: relative;
-    width: 10%;
-    height: 10%;
-    overflow: hidden;
-}
-*/
-.pageTri_1{
+.pageTri::before {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #1a1a1a;
-    transform: rotate(-45deg);
+    top: 0%;
+    left: 0%;
+    width:40vw; height:40vw;
+    background-color: #f4f4f4;
+    transform:  rotate(45deg);
+    transform-origin: 48% 70%;
+    z-index: 2;
+    
 }
-/*
-.pageTri .pageTri_1 img{
-    width: 100%;
-    height: 100%;
+
+
+.pageTri.active{
+    transform: scale(8);
 }
-*/
+
 
 
 /* 모바일 */
-@media (min-width: 1252px) and  (max-width: 1400px) {
+@media (min-width: 1252px) and  (max-width: 1500px) {
     .nav ul{
         top:0;
     }
     /*contact_popup*/
     .contact_popup{
-        width: 70%;
+        width: 50%;
+        
+        height: 75%;
     }
     .contact_popup .top p{
         font-size: 22px;
@@ -671,11 +568,12 @@ height: 100%;
         width: 23px;
     }
     .contact_popup .right{
-        padding-top: 5%;
+        padding-top: 4%;
     }
     .contact_popup .right .title{
         font-size: 40px;
         margin-bottom: 30px;
+        padding-left: 8%;
     }
     .contact_popup .right .title .title_2{
         font-size: 18px;
@@ -705,7 +603,8 @@ height: 100%;
     
 /*contact_popup*/
     .contact_popup{
-        width: 70%;
+        width: 50%;
+        height: 75%;
     }
     .contact_popup .top p{
         font-size: 20px;
@@ -719,9 +618,10 @@ height: 100%;
     .contact_popup .right .title{
         font-size: 34px;
         margin-bottom: 20px;
+        padding-left: 8%;
     }
     .contact_popup .right .title .title_2{
-        font-size: 18px;
+        font-size: 14px;
         padding-top: 0;
     }
     
@@ -731,6 +631,12 @@ height: 100%;
     
     .contact_popup .right .contact_form .contact_form_1 li{
         width: 90%;
+    }
+    .contact_popup .right .right_1 .right_1_de h3{
+        font-size: 24px;
+    }
+    .contact_popup .right .right_1 .right_1_de p{
+        font-size: 16px;
     }
     /*end*/
 }

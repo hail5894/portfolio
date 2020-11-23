@@ -367,8 +367,9 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
 
 .popup .popup_seat .popup_1 .popup_1_title h2 {
     font-family: NanumGothic;
-    font-size: 70px;
+    font-size: 80px;
     color: #f4f4f4;
+    text-align: center;
 }
 
 .popup .popup_seat .popup_1 .popup_1_img {

@@ -6,16 +6,19 @@
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/work_de.css" rel="stylesheet" type="text/css">
+     <link href="css/work_mobile.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="img/favicon/favicon2.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/work._de.js"></script>
+    <script src="js/work_de.js"></script>
+    <script src="js/work.js"></script>
 </head>
 <body>
     <header></header>
     <div class="contact">
-        <a href="#" class="contact_1">ABOUT<span></span></a>
+        <a href="#" class="contact_1 contact_2">ABOUT<span></span></a>
+        <a href="#" class="contact_1 contact_3"><img src="img/favicon3.png"></a>
     </div>
     <nav class="nav"></nav>
     <div class="contact_popup"></div>
@@ -94,15 +97,15 @@
     </main>
     
       
-        <div class="pageTri">
+       <div class="pageTri">
             <div class="pageTri_1">
             </div>
-        </div>
+            </div>
         
         <div class="back">
      <img src="img/work/icon_1.png">
    </div>
-   <!-- popup 기능 -->
+    <!-- popup 기능 -->
     <div class="popup" style="display: none" data-type="1">
 
         <div class="popup_seat">
@@ -121,7 +124,7 @@
                     <img src="img/work/popup/popup_2-1.jpg" alt="">
                     <img src="img/work/popup/popup_2-2.jpg" alt="">
                 </div>
-                <div class="right_detail">
+                <div class="right_detail popup_padding">
                     <div class="right_de_1">
                         <p><i></i>제목</p><span>대갈빡 웹사이트 리뉴얼</span>
                     </div>
@@ -153,13 +156,12 @@
                         <p><i></i>상세설명</p>
                         <text>1. 슬라이드 애니메이션 구현.
                             2. 메인화면 slick 구현.
-                            3. 마음에 드는 상품에 찜기능 클릭시 따로 모아 볼수 있는 페이지 구현
+                            3. 찜기능 클릭시 따로 모아 볼수 있는 페이지 구현
                             4. 최근 본 상품을 우측에 다시 볼 수 있게 편리한 메뉴 구현.
                             5. 모바일 접속 가능하게 큐알코드 구현
                             6. ajax를 통해 Json데이터를 이용하여 코드 간략화
                             (상품을 종류별로 볼수있는 메뉴구현)
                             7. 모바일 접속시 간단하게 볼 수 있는 버거메뉴 구현
-                            8. QnA 탭메뉴 구현
                         </text>
                     </div>
                 </div>
@@ -248,20 +250,18 @@
                     </div>
                     <div class="right_de_1 popup_2_last">
                         <p><i></i>상세설명</p>
-                        <text class="popup_2_text">1. 각종 페이지 해당페이지로 넘어가는 컨텐츠 애니메이션 구현
-                            2. 동영상 시간차에 따른 자막 보이는 기능 구현, svg 애니메이션 구현
-                            3. 스크롤 위치에 따라 글씨 이동할수 있게 구현
-                            4. 메뉴 about에 마우스 세부 메뉴에 가져갈때마다 배경이 바뀔수 있게 구현.
-                            5. notice 마우스를 내릴때마다 아래에서 위로 글들이 튀어나올수 있게 구현
-                            6. 지정 위치가 어디쯤인지 볼수있게 스크롤 구현(나왔다 사라졌다)
-                            7. 마우스를 드래그해서 끌어당겨서 소식들을 볼 수있게 x좌표로 끌어냈다 할 수 있는 기능 구현
-                            (←,→방향표를 눌러도 옆으로 왔다갔다 할수 있게 구현) 구현
-                            8. inc-head-footer하나로 전페이지 헤더,푸터 나올수 있게 편리하게 구현.
-                            9. 캐스팅표 마우스 휠을 돌릴때마다 전후 역할들을 볼수 있게 구현
-                            10. sight메뉴에 사진 ,동영상 보기 원하 는 것을 누르면 팝업창 켜지고 끌 수있게 구현.
-                            스크롤에 따라 전후 사진,영상 볼수 있게 원페이지로 구현
-                            11. 티켓정보 -를 누르면 세부메뉴 생략 +를 누르면 세부메뉴를 볼수있게 펴졌다 접어졌다 구현
-                            12. 메뉴 위치에 따라 네비가 위치를 알려주고 그 네비를 클릭하면 원하는 위치에 도달할수 있게 함
+                        <text class="popup_2_text"> 1. 동영상 시간차에 따른 자막 보이는 기능 구현, svg 애니메이션 구현
+                            2. 스크롤 위치에 따라 글씨 애니메이션 구현
+                            3. 세부 메뉴에 마우스 가져갈때마다 배경이 바뀔수 있게 구현.
+                            4. [notice] 메뉴 마우스를 내릴때마다 아래에서 위로 글들이 튀어나올수 있게 구현
+                            5. 지정 위치가 어디쯤인지 볼수있게 스크롤 구현(나왔다 사라졌다)
+                            6. 마우스를 드래그해서 끌어당기고,화살표를누를때마다 모든 소식을 볼 수있게 x좌표로 끌어지게 기능 구현
+                            7. inc-head-footer하나로 전페이지 헤더,푸터 나올수 있게 편리하게 구현.
+                            8. 캐스팅표 : 마우스 휠을 돌릴때마다 전후 역할들을 볼수 있게 구현
+                            9. sight메뉴에 사진,동영상 보기 원하 는 것을 누르면 팝업창 켜지고 끌 수있게 구현.
+                            -스크롤에 따라 전후 사진,영상 볼수 있게 원페이지로 구현
+                            10. 티켓정보 -를 누르면 세부메뉴 생략 +를 누르면 세부메뉴를 볼수있게 펴졌다 접어졌다 구현
+                            11. 메뉴 위치에 따라 네비가 위치를 알려주고 그 네비를 클릭하면 원하는 위치에 도달할수 있게 함
                         </text>
                     </div>
                 </div>
@@ -353,9 +353,8 @@
                         <text>1.fact 메인 제목인 글씨들이 옆에서 튀어나올수있게 구현
                             2. 슈퍼맨이 땅에서 올라오는 모습인 애니메이션 구현
                             3. 전 타임 위치에 스크롤이 도달하면 할리퀸이 나오고 할리퀸이 나가면 메뉴가 나올수 있게 구현
-                            4. 상품을 클릭하면 메뉴 정보가 나올수 있게 구현
-                            5. 전 타임 위치에 스크롤이 도달하면 성장률 그래프 애니메이션 실행
-                            -마치 그래프가 0에서부터 채워져 나가는 형식으로 보이게끔
+                            4. 상품을 클릭하면 메뉴 정보를 볼 수 있게 구현
+                            5. 해당 위치에 스크롤이 도달하면 성장률 그래프 그래프가 0에서부터 채워져 나가는 형식으로 보이게끔 애니메이션 실행
                             6. notice 마우스를 내릴때마다 아래에서 위로 글들이 튀어나올수 있게
                             구현
                             7. 던킨도너츠 소식 slick 구현
@@ -395,6 +394,7 @@
             </section>
         </div>
     </div>
+    
     <div class="popup" style="display: none;" data-type="4"></div>
 </body>
 

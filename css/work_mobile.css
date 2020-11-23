@@ -2,8 +2,306 @@
 @import url("common.css");
 
 /* 모바일 */
-@media (min-width: 991px) and (max-width: 1251px){
+
+
+@media (max-width: 1500px) and (min-width: 1252px) {
+    .popup{
+        height: 100%;
+        display: none;
+    }
+    .popup .popup_scroll_1 a{
+        font-size: 14px;
+        padding-top: 36px;
+    }
+    .popup .popup_scroll_1 a span{
+        width: 20px;
+        height: 35px;
+        margin-left: -10px;
+    }
+    .popup .popup_scroll_1 a span:before{
+        width: 3px;
+        height: 3px;
+        margin-left: -1px;
+    }
+    .popup .popup_scroll_1{
+    bottom: 50%;
+    right: 2%;
+    }
+    /*1*/
+    .popup .popup_seat .popup_1{
+        transform: translateX(000%);
+        
+           height: 100%;
+    }
+    .popup .popup_seat .popup_1 .popup_1_title h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .popup .popup_seat .popup_1 .popup_1_img{
+        width: 60%;
+        margin: 0 auto;
+        height: 550px;
+        padding-left: 2%;
+    }
+    /*2*/
+    .popup_2_text{font-size: 12px !important;}
+    .popup .popup_seat .popup_2{
+        padding-top: 4%;
+        transform: translateX(000%);
+        padding-left: 0;
+        display: block;
+        
+        height: 100%;
+    }
     
+    .popup .popup_seat .popup_2 .left_img{
+        margin-left: 0;
+        width: 100%;
+        display: flex; flex-direction: row;
+        justify-content: space-around;
+        height: 280px;
+    }
+    
+    .popup .popup_seat .popup_2 .left_img img{
+        width: 38%;
+    }
+  
+    .popup .popup_seat .popup_2 .right_detail{
+        margin-left: 10%;
+        width: 50%;
+        height: 50%;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 p{
+        font-size: 22px;
+    }
+    
+   
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 span{
+        font-size: 17px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 text{
+        margin: 0;
+        font-size: 17px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .popup_2_last{
+        position: absolute;
+        right: -85%;
+        top: 2%;
+    }
+    .popup .popup_seat .popup_2 .right_detail .popup_2_last text{
+        padding-right: 8%;
+         font-size: 14px !important;
+    }
+    /*3*/
+  
+    .popup .popup_seat .popup_3{
+        padding-top: 0%;
+        padding-bottom: 3%;
+        transform: translateX(-200%);
+        padding-left: 8%;
+        display: block;
+        position: relative;
+        height: 100%;
+    }
+    
+    .popup .popup_seat .popup_3 .left_img{
+        margin-left: 0;
+        width: 100%;
+        position: absolute;
+        left: 55%;
+        top: -30%;
+    }
+    .popup .popup_seat .popup_3 .right_detail{
+        height: 100%;
+        padding-top: 8%;
+    }
+
+    .popup .popup_seat .popup_3 .left_img img:nth-of-type(2){
+        display: none;
+    }   
+   
+    .popup .popup_seat .popup_3 .left_img img{
+        width: 34%;
+    }
+    .popup .popup_seat .popup_3 .right_detail{
+        margin-left: 2%;
+        width: 100%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .h2 h2{
+        font-size: 40px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        font-size: 22px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 text{
+        font-size: 17px;
+        margin: 0;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        padding-top: 0;
+    }
+
+    .popup .popup_seat .popup_3 .right_detail .h2_top{
+        padding-top: 10%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .goto{
+      padding-right: 5%;
+        font-size: 28px;
+    }
+    
+    .popup_3_detail{
+        width: 100% !important;
+    }
+    
+}
+
+@media (min-width: 991px) and (max-width: 1251px){
+     .popup{
+        height: 100%;
+        display: none;
+    }
+    .popup .popup_scroll_1 a{
+        font-size: 14px;
+        padding-top: 36px;
+    }
+    .popup .popup_scroll_1 a span{
+        width: 20px;
+        height: 35px;
+        margin-left: -10px;
+    }
+    .popup .popup_scroll_1 a span:before{
+        width: 3px;
+        height: 3px;
+        margin-left: -1px;
+    }
+    .popup .popup_scroll_1{
+    bottom: 50%;
+    right: 2%;
+    }
+    /*1*/
+    .popup .popup_seat .popup_1{
+        transform: translateX(000%);
+        
+           height: 100%;
+    }
+    .popup .popup_seat .popup_1 .popup_1_title h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .popup .popup_seat .popup_1 .popup_1_img{
+        width: 80%;
+        margin: 0 auto;
+        height: 600px;
+        padding-left: 2%;
+    }
+    /*2*/
+    .popup_2_text{font-size: 12px !important;}
+    .popup .popup_seat .popup_2{
+        padding-top: 6%;
+        transform: translateX(000%);
+        padding-left: 0;
+        display: block;
+        
+        height: 100%;
+    }
+    
+    .popup .popup_seat .popup_2 .left_img{
+        margin-left: 0;
+        width: 100%;
+        display: flex; flex-direction: row;
+        justify-content: space-around;
+        height: 280px;
+    }
+    
+    .popup .popup_seat .popup_2 .left_img img{
+        width: 38%;
+    }
+  
+    .popup .popup_seat .popup_2 .right_detail{
+        margin-left: 10%;
+        width: 50%;
+        height: 50%;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 p{
+        font-size: 20px;
+    }
+    
+   
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 span{
+        font-size: 14px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .right_de_1 text{
+        margin: 0;
+        font-size: 13px;
+    }
+    .popup .popup_seat .popup_2 .right_detail .popup_2_last{
+        position: absolute;
+        right: -85%;
+        top: 2%;
+    }
+    .popup .popup_seat .popup_2 .right_detail .popup_2_last text{
+        padding-right: 8%;
+    }
+    /*3*/
+  
+    .popup .popup_seat .popup_3{
+        padding-top: 0%;
+        padding-bottom: 3%;
+        transform: translateX(-200%);
+        padding-left: 8%;
+        display: block;
+        position: relative;
+        height: 100%;
+    }
+    
+    .popup .popup_seat .popup_3 .left_img{
+        margin-left: 0;
+        width: 100%;
+        position: absolute;
+        left: 55%;
+        top: -30%;
+    }
+    .popup .popup_seat .popup_3 .right_detail{
+        height: 100%;
+        padding-top: 8%;
+    }
+
+    .popup .popup_seat .popup_3 .left_img img:nth-of-type(2){
+        display: none;
+    }   
+   
+    .popup .popup_seat .popup_3 .left_img img{
+        width: 36%;
+    }
+    .popup .popup_seat .popup_3 .right_detail{
+        margin-left: 2%;
+        width: 100%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .h2 h2{
+        font-size: 40px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        font-size: 20px;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 text{
+        font-size: 16px;
+        margin: 0;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        padding-top: 0;
+    }
+
+    .popup .popup_seat .popup_3 .right_detail .h2_top{
+        padding-top: 10%;
+    }
+    .popup .popup_seat .popup_3 .right_detail .goto{
+      padding-right: 5%;
+        font-size: 28px;
+    }
+    
+    .popup_3_detail{
+        width: 100% !important;
+    }
     
 }
 
@@ -31,28 +329,38 @@
     bottom: 50%;
     right: 2%;
     }
-    /*1*/
+/*1*/
     .popup .popup_seat .popup_1{
-        padding-top: 16%;
-        transform: translateX(000%);
+        transform: translateX(-200%);
+           height: 100%;
+            padding: 5% 2%;
     }
-    .popup .popup_seat .popup_1 .popup_1_title h2{
-        font-size: 45px;
+    .popup .popup_seat .popup_1 .popup_1_title{
+        padding-left: 0%;
+        padding: 0 5%;
         text-align: center;
     }
+    .popup .popup_seat .popup_1 .popup_1_title h2{
+        font-size: 60px;
+    }
     .popup .popup_seat .popup_1 .popup_1_img{
-        width: 80%;
+        width:70%;
         margin: 0 auto;
         height: 450px;
-        padding-left: 2%;
+        padding-left: 0%;
+        padding-top: 0%;
+        margin-top: 5%;
+       
     }
     /*2*/
     .popup_2_text{font-size: 12px !important;}
     .popup .popup_seat .popup_2{
-        padding-top: 3%;
+        padding-top: 2%;
         transform: translateX(000%);
         padding-left: 0;
         display: block;
+        
+        height: 100%;
     }
     
     .popup .popup_seat .popup_2 .left_img{
@@ -66,6 +374,7 @@
     .popup .popup_seat .popup_2 .left_img img{
         width: 40%;
     }
+  
     .popup .popup_seat .popup_2 .right_detail{
         margin-left: 2%;
         width: 50%;
@@ -83,59 +392,65 @@
     }
     .popup .popup_seat .popup_2 .right_detail .popup_2_last{
         position: absolute;
-        right: -94%;
-        top: 8%;
+        right: -95%;
+        top: 2%;
+        height: 100%;
     }
+      
     /*3*/
-
+  
     .popup .popup_seat .popup_3{
-        padding-top: 3%;
-        transform: translateX(-100%);
-        padding-left: 0;
+        padding-top: 0%;
+        padding-bottom: 3%;
+        transform: translateX(-200%);
+        padding-left: 2%;
         display: block;
+        position: relative;
+        
+           height: 100%;
     }
     
     .popup .popup_seat .popup_3 .left_img{
         margin-left: 0;
         width: 100%;
-        display: flex; flex-direction: row;
-        justify-content: space-around;
-        height: 280px;
+        position: absolute;
+        left: 55%;
+        top: -36%;
     }
-       
-    .popup_3_img{
-    height: 280px;
+    .popup .popup_seat .popup_3 .right_detail{
+        height: 100%;
     }
-    
+
+    .popup .popup_seat .popup_3 .left_img img:nth-of-type(2){
+        display: none;
+    }   
+   
     .popup .popup_seat .popup_3 .left_img img{
-        width: 40%;
+        width: 36%;
     }
     .popup .popup_seat .popup_3 .right_detail{
         margin-left: 2%;
-        width: 50%;
-        height: 50%;
+        width: 100%;
     }
     .popup .popup_seat .popup_3 .right_detail .h2 h2{
-        font-size: 50px;
+        font-size: 40px;
     }
     .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
         font-size: 20px;
     }
     .popup .popup_seat .popup_3 .right_detail .right_de_1 text{
         font-size: 14px;
+        margin: 0;
     }
-    .popup .popup_seat .popup_3 .right_detail .right_de_1:nth-of-type(3){
-        position: absolute;
-        right: -94%;
-         top: 22%;
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p{
+        padding-top: 0;
     }
+
     .popup .popup_seat .popup_3 .right_detail .h2_top{
         padding-top: 10%;
     }
     .popup .popup_seat .popup_3 .right_detail .goto{
-        position: absolute;
-        right: -90%;
-        bottom: 8%;
+      padding-right: 5%;
         font-size: 28px;
     }
     
@@ -146,9 +461,13 @@
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
+    .popup_padding{
+        padding: 8% !important;
+    }
      .popup{
-        padding-top: 6%;
          height: 100%;
+         
+        padding-top: 6%;
     }
     .popup .popup_scroll_1 a{
         font-size: 14px;
@@ -170,22 +489,25 @@
     }
     /*1*/
     .popup .popup_seat .popup_1{
-        padding-top: 16%;
         transform: translateX(-200%);
+           height: 100%;
+            padding: 10% 2%;
     }
     .popup .popup_seat .popup_1 .popup_1_title{
-        padding-left: 10%;
+        padding-left: 0%;
+        padding: 0 5%;
         text-align: center;
     }
     .popup .popup_seat .popup_1 .popup_1_title h2{
-        font-size: 40px;
+        font-size: 35px;
     }
     .popup .popup_seat .popup_1 .popup_1_img{
         width:80%;
         margin: 0 auto;
-        height: 450px;
-        padding-left: 2%;
-        padding-top: 15%;
+        height: 400px;
+        padding-left: 0%;
+        padding-top: 0%;
+        margin-top: 15%;
        
     }
     /*2*/
@@ -194,6 +516,7 @@
         transform: translateX(-200%);
         padding-left: 0;
         display: block;
+           height: 100%;
     }
     
     .popup .popup_seat .popup_2 .left_img{
@@ -205,17 +528,19 @@
          display: none;
     }
     
-    .popup .popup_seat .popup_2 .left_img img{
-        width: 40%;
-    }
+   
     .popup .popup_seat .popup_2 .right_detail{
         width: 100%;
         margin-left: 0;
-        padding-left: 4%;
+        padding-left: 0%;
+        
+        padding: 8% 4%;
      
     }
     .popup .popup_seat .popup_2 .right_detail .right_de_1 p{
         font-size: 20px;
+        margin: 0;
+        padding-top: 0;
     }
     .popup .popup_seat .popup_2 .right_detail .right_de_1 span{
         font-size: 14px;
@@ -230,7 +555,9 @@
         top: 8%;*/
     }
     /*3*/
-  
+    .popup .popup_seat .popup_3 .right_detail{
+        height: 100%;
+    }
     .popup .popup_seat .popup_3{
         padding-top: 3%;
         padding-bottom: 3%;
@@ -238,6 +565,8 @@
         padding-left: 2%;
         display: block;
         position: relative;
+        
+        height: 100%;
     }
     
     .popup .popup_seat .popup_3 .left_img{
@@ -245,20 +574,21 @@
         width: 100%;
         position: absolute;
         left: 55%;
-        top: -25%;
+        top: -38%;
     }
     
 
-    .popup .popup_seat .popup_3 .left_img img:nth-of-type(2){
-        display: none;
-    }   
-   
     .popup .popup_seat .popup_3 .left_img img{
         width: 40%;
+    }
+    
+     .popup .popup_seat .popup_3 .left_img img:nth-of-type(2){
+        display: none;
     }
     .popup .popup_seat .popup_3 .right_detail{
         margin-left: 2%;
         width: 100%;
+        padding: 4% 0;
     }
     .popup .popup_seat .popup_3 .right_detail .h2 h2{
         font-size: 40px;
@@ -316,24 +646,26 @@
     bottom: 50%;
     right: 2%;
     }
-    /*1*/
     .popup .popup_seat .popup_1{
-        padding-top: 16%;
-        transform: translateX(-100%);
+        transform: translateX(-200%);
+           height: 100%;
+            padding: 30% 2%;
     }
     .popup .popup_seat .popup_1 .popup_1_title{
-        padding-left: 10%;
+        padding-left: 0%;
+        padding: 0 5%;
         text-align: center;
     }
     .popup .popup_seat .popup_1 .popup_1_title h2{
-        font-size: 28px;
+        font-size: 30px;
     }
     .popup .popup_seat .popup_1 .popup_1_img{
-        width:80%;
+        width:70%;
         margin: 0 auto;
         height: 300px;
-        padding-left: 2%;
-        padding-top: 15%;
+        padding-left: 0%;
+        padding-top: 0;
+        margin-top: 10%;
        
     }
     /*2*/
@@ -345,6 +677,8 @@
         transform: translateX(-100%);
         padding-left: 0;
         display: block;
+        
+           height: 100%;
     }
     
     .popup .popup_seat .popup_2 .left_img{
@@ -363,6 +697,7 @@
         width: 100%;
         margin-left: 0;
         padding-left: 4%;
+        height: 100%;
      
     }
     .popup .popup_seat .popup_2 .right_detail .right_de_1 p{
@@ -390,6 +725,9 @@
     
     
     /*3*/
+      .popup .popup_seat .popup_3 .right_detail{
+        height: 100%;
+    }
     .popup .popup_seat .popup_3{
         padding-top: 3%;
         padding-bottom: 3%;
@@ -397,6 +735,8 @@
         padding-left: 2%;
         display: block;
         position: relative;
+        
+           height: 100%;
     }
     
     .popup .popup_seat .popup_3 .left_img{

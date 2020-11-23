@@ -64,10 +64,6 @@ $(function () {
     
     }
     
-//     if($(window).innerWidth<990){
-//          $('.main_1').removeClass('avtive'); 
-//         console.log('a')
-//       }
 
      setTimeout(function(){blen = false;},500);
     
@@ -101,7 +97,7 @@ $(function () {
             if($('.work_1').css("display") == "block"){
             $('.art_main').addClass('active');
             }
-       
+           
            }else{
                  $('.main_1').addClass('active');
 
@@ -118,6 +114,9 @@ $(function () {
             if($('.work_1').css("display") == "none"){
             $('.art_main').removeClass('active');
             }
+    
+               
+               
            }
     
     };
@@ -159,33 +158,20 @@ $(function () {
 $(function () {
     //화면전환
     $('.main_2_1 .more a').on('click',function(e){
-     e.preventDefault();
-        
+        e.preventDefault();
         $('.pageTri').show();
-          $('.pageTri .pageTri_1').animate({
-                width: '70%',
-                height: '70%'
-            },500, function () {
-                    $('.pageTri .pageTri_1').animate({
-                       width: '0%',
-                       height: '0%'
-                    }, 500)}); 
-        
-        
-                 $('.pageTri').animate({
-                 right:'-20%',
-                bottom:'-30%'
-            },500, function () {
-                     $('.pageTri').animate({
-                       right: '0%',
-                       bottom: '0%'
-                    }, 500)}); 
+        setTimeout(function(){$('.pageTri').addClass('active');},10);
         
         var url;
          setTimeout(function(e) { 
                url = "./work.html";
-                $(location).attr('href',url);
-            }, 1000);
+              $(location).attr('href',url);
+                $('body').addClass('active');
+            }, 50);
+     
+     
+        
+        
         });
     
     
@@ -198,6 +184,22 @@ $(function () {
                  height: '2000px'
             });
         }
+    
+        if($(window).width() < 980 ){
+        $('.more').on('touchstart',function(e){
+            e.preventDefault();
+             var url;
+         setTimeout(function(e) { 
+               url = "./work.html";
+                $(location).attr('href',url);
+                $('body').addClass('active');
+            }, 50);
+       
+        });
+            
+       
+        }
+    
 });
 
 

@@ -1,5 +1,5 @@
 $(function () {
-
+    $('body').addClass('active');  
     $('header').load('inc_head_foot.html .head', me);
   //  $('.contact').load('inc_head_foot.html .contact_1');
     $('.contact_popup').load('inc_head_foot.html .top,.right',x);
@@ -16,14 +16,11 @@ $(function () {
             $('.head_1').removeClass('active'); 
              $('.hea_bot').removeClass('active');
           
-  
-        
+          
             
             $('.menu-trigger').toggleClass('active');
             $('.nav').toggleClass('active');
             $('.contact a').toggleClass('active');
-
-
 
 
         });
@@ -62,27 +59,22 @@ function nav(){
     });
       
     //2페이지전환 종이
+    
     function pageActive(){
         $('.pageTri').show();
-         $('.pageTri').animate({
-                 right:'-40%',
-                bottom:'-40%'
-            },400, function () {
-                     $('.pageTri').animate({
-                       right: '0%',
-                       bottom: '0%'
-                    }, 400)}); 
-        
-        setTimeout(function(){
-            $('.pageTri_1').fadeOut(400);
-        },300);
+     
+        setTimeout(function(){$('.pageTri').addClass('active');},10);
+          
+      
         
         var url, h =  ['index.html', 'work.html', 'about.html'];
         var hIndex= index;
          setTimeout(function(e) { 
-            url=h[hIndex];
-            $(location).attr('href',url);
-            }, 800);
+             url=h[hIndex];$(location).attr('href',url);
+            $('body').addClass('active');
+            },50);
+     
+         
     }
     
 
@@ -90,7 +82,6 @@ function nav(){
     $('.navLi').on('mouseover',function(){
          $('.navLi').removeClass('active');
            $(this).addClass('active'); 
-       
         });
          
   
@@ -102,6 +93,8 @@ function nav(){
     
 function x(){
      //contact 
+    if($(window).width()>991){
+        console.log('a')
     $('.contact').on('click',function(e){
         e.preventDefault();
         $('.contact_popup').fadeIn(300);
@@ -114,9 +107,8 @@ function x(){
         transition: '.5s ease-in-out'
        });
 
-        
-        
-    }); 
+    });
+    }
 }
  
    

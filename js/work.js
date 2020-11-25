@@ -83,7 +83,7 @@ if($(window).width() > 991){
         
      
     //3.팝업 띄우기/work_goods는 work.html,work_goods는 work_de.html
-    $('.work_goods,.work_goods').on('click',function(e){
+    $('.work_goods').on('click',function(e){
         e.preventDefault();
         index=$(this).index();  //팝업 여러개중 한개 index번호 받기
         

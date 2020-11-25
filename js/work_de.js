@@ -25,39 +25,30 @@ $(function () {
         },200);
     }
     
-    //a태그 클릭시 숨겨진 popup창 발동
-//    $('.work_de_1 a').on('click',function(e){
-//        e.preventDefault();
-//        index= $(this).index();   //해당 index번호
-//        
-//     
-//        $('.contact').hide();
-//        //모든 img의 active를 뺴준다.
-//        $('.works_imgs').removeClass('active');
-//        $('.works_imgs img').removeClass('active');
-//        //0.2초후에 해당 img active 실행( 1. 이미지 천천히 떠오르다가)
-//        setTimeout(function(){
-//         $('.works_imgs').addClass('active');
-//         $('.works_imgs img').eq(index).addClass('active');
-//        },200);
-//        // 2. popup창 보이게 실행    
-//        $('.popup').eq(index).fadeIn(2000);
-//           
-//        //3.PORTFOLIO라는 글자 사라짐
-//        $('.hea_cen').fadeOut(500);
-//        //4.버거메뉴 상단으로 이동
-//        $('.menu-trigger').animate({
-//               top:'50%',
-//               color: '#f4f4f4'
-//            
-//            },100);
-//        //5. 뒤로가기 화살표 생성
-//        $('.back').show();
-//  
-//     
-//    });
- 
- 
+    //a태그 클릭시 숨겨진 popup창 발tod
+     $('.work_de_1 a').on('click',function(e){
+        e.preventDefault();
+        index=$(this).index();  //팝업 여러개중 한개 index번호 받기
+        
+        $('.popup').eq(index).fadeIn(500);  //해당 popup창 나타나기
+        $('.contact').hide();   //contact 숨기기
+     
+        $('.hea_cen').fadeOut(500); //글씨 숨기기
+        //버거메뉴 중앙으로 이동
+        $('.menu-trigger').animate({
+               top:'50%',
+               color: '#f4f4f4'
+            },100);
+        $('.back').show();  //뒤로가기 버튼 나오기
+         
+         
+        $('header').addClass('active');
+        $('.menu-trigger span').removeClass('active');
+        $('.hea_cen').removeClass('active');
+        $('.head_1').removeClass('active'); 
+        $('.hea_bot').removeClass('active');
+       
+    });
     //end
 });
 

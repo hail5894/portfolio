@@ -735,6 +735,12 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
     height: 100%;}
 
 /* 모바일 */
+@media (min-width: 991px) and (max-width: 1500px){
+    main .work_2_seat .work_2 .goods_detail a .goods_detail_1 p{
+        font-size: 52px;
+        white-space: nowrap;
+    }
+}
 @media (min-width: 991px) and (max-width: 1251px){}
 
 @media (min-width: 769px) and (max-width: 990px) {

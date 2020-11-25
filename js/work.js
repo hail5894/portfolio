@@ -82,11 +82,10 @@ if($(window).width() > 991){
  
         
      
-    //3.팝업 띄우기
-    $('.work_goods').on('click',function(e){
+    //3.팝업 띄우기/work_goods는 work.html,work_goods는 work_de.html
+    $('.work_goods,.work_goods').on('click',function(e){
         e.preventDefault();
         index=$(this).index();  //팝업 여러개중 한개 index번호 받기
-        active_1();
         
         $('.popup').eq(index).fadeIn(500);  //해당 popup창 나타나기
         $('.contact').hide();   //contact 숨기기
@@ -98,6 +97,8 @@ if($(window).width() > 991){
                color: '#f4f4f4'
             },100);
         $('.back').show();  //뒤로가기 버튼 나오기
+        active_1();
+       
     });
     
        //뒤로가기 누르면 이벤트 발생

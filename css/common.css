@@ -86,9 +86,7 @@ header .head .head_1 {
 header .head .head_1.active{
     border-right: 1px solid #1a1a1a;
 }
-header .head .head_1.active{
-  border-bottom: 1px solid #f4f4f4;
-}
+
 
 header .head .head_1 div {
   position: relative;

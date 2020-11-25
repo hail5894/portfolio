@@ -38,7 +38,7 @@
 }
 body{
     opacity: 0;
-    transition: .1s;
+    transition: .3s;
 }
 body.active{
     opacity: 1;
@@ -526,7 +526,7 @@ height: 100%;
     overflow: hidden;
     transform: scale(0.3);
     transform-origin: 100% 100%;
-    transition: .8s;
+    transition: 1s;
     
     display: none;
 }
@@ -555,9 +555,7 @@ height: 100%;
 
 /* 모바일 */
 @media (min-width: 1252px) and  (max-width: 1500px) {
-    .nav ul{
-        top:0;
-    }
+    
     /*contact_popup*/
     .contact_popup{
         width: 50%;

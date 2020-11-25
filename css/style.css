@@ -22,8 +22,8 @@ main {
  
 }
 
-main .work_1 {
-    height: 100%;
+.work_1 {
+    height: 100vh;
     left: 50px;
     margin-left: 0;
     overflow: hidden;
@@ -35,14 +35,14 @@ main .work_1 {
     display: none;
 }
 
-main .work_1 .wo_title {
+.work_1 .wo_title {
     position: relative;
     height: 100%;
     width: 40px;
     border-right: 1px solid #1a1a1a;
 }
 
-main .work_1 .wo_title .wo_title_top {
+.work_1 .wo_title .wo_title_top {
     cursor: pointer;
     left: 30%;
     top: 3%;
@@ -52,17 +52,17 @@ main .work_1 .wo_title .wo_title_top {
     z-index: 1;
 }
 
-main .work_1 .wo_title .wo_title_top p {
+.work_1 .wo_title .wo_title_top p {
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease;
     width: 8px;
 }
 
-main .work_1 .wo_title .wo_title_top p img {
+.work_1 .wo_title .wo_title_top p img {
     width: 100%;
 }
 
-main .work_1 .wo_title .wo_title_top span {
+.work_1 .wo_title .wo_title_top span {
     font-family: Roboto Slab;
     font-size: 14px;
     color: #1a1a1a;
@@ -75,7 +75,7 @@ main .work_1 .wo_title .wo_title_top span {
     transform: rotate(90deg) translate(10px, 16px);
 }
 
-main .work_1 .wo_title .wo_title_button {
+.work_1 .wo_title .wo_title_button {
     cursor: pointer;
     left: 30%;
     bottom: 3%;
@@ -85,18 +85,18 @@ main .work_1 .wo_title .wo_title_button {
     z-index: 1;
 }
 
-main .work_1 .wo_title .wo_title_button p {
+.work_1 .wo_title .wo_title_button p {
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease;
     width: 8px;
     margin: 0 auto;
 }
 
-main .work_1 .wo_title .wo_title_button p img {
+.work_1 .wo_title .wo_title_button p img {
     width: 100%;
 }
 
-main .work_1 .wo_title .wo_title_button span {
+ .work_1 .wo_title .wo_title_button span {
     font-family: Chakra Petch;
     font-size: 14px;
     color: #1a1a1a;
@@ -428,7 +428,7 @@ main .main_2 .main_2_1 .tri {
     }
 
     main .main_1 .main_1_1 div .art_main2 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     main .main_1 .main_1_1 div .art_main2 .main_left,
@@ -445,7 +445,7 @@ main .main_2 .main_2_1 .tri {
     }
 
     .haha {
-        font-size: 22px;
+        font-size: 23px;
     }
     main .main_2 .main_2_1 .main_2_1-1 span{
         font-size: 650px;
@@ -469,7 +469,7 @@ main .main_2 .main_2_1 .tri {
     }
 
     main .main_1.active{
-        height: 2200px;
+        height: 2350px;
         padding-top: 0;
     }
 
@@ -522,12 +522,13 @@ main .main_2 .main_2_1 .tri {
 
     main .main_1 .main_1_1 div .art_main2 .main_left h3,
     main .main_1 .main_1_1 div .art_main2 .main_right h3 {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     main .main_1 .main_1_1 div .art_main2 {
-        font-size: 15px;
+        font-size: 17px;
         display: block;
+        padding-top:10%;
     }
 
 
@@ -548,12 +549,12 @@ main .main_2 .main_2_1 .tri {
 
     main .main_1 .main_1_1 div .art_main2 .main_left ul,
     main .main_1 .main_1_1 div .art_main2 .main_right ul {
-        margin-top: 60px;
+        margin-top: 80px;
     }
 
     .haha {
-        font-size: 24px;
-        padding: 30px 0;
+        font-size: 23px;
+        padding: 50px 0 80px;
         text-align: center;
     }
 
@@ -571,7 +572,7 @@ main .main_2 .main_2_1 .tri {
     }
 
     main .main_1.active{
-        height: 1900px;
+        height: 2000px;
         padding-top: 0;
     }
 
@@ -631,11 +632,12 @@ main .main_2 .main_2_1 .tri {
 
     main .main_1 .main_1_1 div .art_main2 {
         width: 90%;
+        padding-top:10%;
     }
 
     main .main_1 .main_1_1 div .art_main2 .main_left h3,
     main .main_1 .main_1_1 div .art_main2 .main_right h3 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     main .main_1 .main_1_1 div .art_main2 {
@@ -661,12 +663,12 @@ main .main_2 .main_2_1 .tri {
 
     main .main_1 .main_1_1 div .art_main2 .main_left ul,
     main .main_1 .main_1_1 div .art_main2 .main_right ul {
-        margin-top: 40px;
+        margin-top: 80px;
     }
 
     .haha {
-        font-size: 20px;
-        padding: 30px 0;
+        font-size: 21px;
+        padding: 30px 0 60px;
         text-align: center;
     }
 

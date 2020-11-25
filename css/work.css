@@ -550,13 +550,19 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
 .popup .popup_seat .popup_3 .right_detail .goto {
     width: 100%;
     font-family: Chakra Petch;
-    font-size: 22px;
+    font-size: 30px;
     color: #f4f4f4;
     text-decoration: none;
     text-align: right !important;
     padding-right: 10%;
 }
 
+
+.popup .popup_seat .popup_3 .right_detail .goto:hover{
+     color: #eb5938;
+    opacity: .8;
+    transition: 0.6s cubic-bezier(0,0,.2,1);
+}
 .popup .popup_seat .popup_3 .right_detail .h2_top {
     padding-top: 16%;
 }

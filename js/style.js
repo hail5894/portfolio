@@ -13,7 +13,7 @@ $(function () {
     
     //선언
     var m1 = {up:0,down:0,state:'',sT:null,rotate:0,scale:0.25,top:50, transY:-50};
-    var blen = true,oneS=true,sy=0;
+    var blen = true, oneS=true, sy=0;
     var paged = localStorage.page,url;
     
     
@@ -95,14 +95,14 @@ $(function () {
                   display:"block"
              });    
             //main은 fixed한거 absolute 바꾸기
-                $('main').css({
+            $('main').css({
                     position:'absolute',
                     top:sy+0,
                     height:'auto'
                 });
-              // $('main').trigger('click');
+  
                  $('.work_1').fadeIn();     //work_1 main써있는거 보이게하기
-
+  
                 //work_1가 나타나면 사진 scale 1.5커지게하기
                 if($('.work_1').css("display") == "block"){
                     $('.art_main').addClass('active');
@@ -116,12 +116,12 @@ $(function () {
                 var ms = (sy+$('main').height()) - window.innerHeight;
                 //sy+메인 높이-윈도우 전체높이
                 if(ms < window.scrollY){
-                    window.scrollTo(0,ms); 
+                    window.scrollTo(0,ms);   
                     //ms보다 지금 스크롤 높이가 크면 ms로 조절
                 }else{
                     window.scrollTo();  //아니면 리셋     
                 }
-            
+                          
             //↓오해하지말자 (m1.scale==1) else 임
             }else{
             //main_1의 active 더한다 .padding-top:50vh;  height: 100%;인거
@@ -138,22 +138,24 @@ $(function () {
                 localStorage.page = 0;  //localStorage=0
            }
         //만약에 sy값이 지금 스크롤보다 크면 메인 fixed로 바꾸기  
-         if(sy > window.scrollY){
+        setTimeout(function(){
+               if(sy > window.scrollY){
              $('main').css({
                 position:'fixed',
                 top:0,
                 height:'100%'
             });
             oneS = true;    //oneS는 true로 바꿈
-        }
+        } 
+        },500);    
+     
             
-       
+      
            
-      //page- localStorage가 0이면 색깔바꾸기,아니면 지우기
+    //page- localStorage가 0이면 색깔바꾸기,아니면 지우기
      paged == 0 ? $('.pageTri').addClass('pageTri2') : $('.pageTri').removeClass('pageTri2');
       
     }
-    
     
     
     
@@ -202,7 +204,7 @@ $(function () {
                url = "./work.html";
               $(location).attr('href',url);
                 $('body').addClass('active');
-            }, 500);
+            }, 200);
     
         });
     

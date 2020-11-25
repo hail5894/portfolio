@@ -178,7 +178,7 @@ if($(window).width() > 991){
   
 
 
-  //work 누르면 메뉴 모아둔 페이지 이동
+  //work 누르면 메뉴 모아둔 페이지 이동(화면전환)
     $('.goods_detail').on('click',function(e){
      e.preventDefault();  
         //다른 전환과 차이점을 두기위해 배경색 흰색으로 바꿈
@@ -190,13 +190,12 @@ if($(window).width() > 991){
         setTimeout(function(){$('.pageTri').addClass('active');},10);
         
         
-     
         //0.6초후 위에 있는 모든 전환 실행후 work_de 페이지로 이동
          setTimeout(function(e) { 
                url = "./work_de.html";
               $(location).attr('href',url);
                 $('body').addClass('active');   //투명 0에서 1로 실행
-            }, 600);
+            }, 200);
         });
   
     

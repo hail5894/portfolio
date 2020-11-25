@@ -38,7 +38,7 @@
 }
 body{
     opacity: 0;
-    transition: .3s;
+    transition: .2s;
 }
 body.active{
     opacity: 1;

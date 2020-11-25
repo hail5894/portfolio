@@ -76,7 +76,7 @@ function nav(){
              url=h[hIndex];
              $(location).attr('href',url);
              //해당 index번호에 따른 페이지 넘김
-            },100);
+            },200);
         }
     
 

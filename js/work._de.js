@@ -1,4 +1,3 @@
-
 $(function () { 
     
      $('header').addClass('active');
@@ -61,10 +60,7 @@ $(function () {
     });
     
     
-    //팝업 마우스 휠 했을떄
-
-        
-  var moveTop,deSet;
+    //팝업 마우스 휠 했을떄var moveTop,deSet;
     $('.popup').on('wheel DOMMouseScroll',function(e){
         
         clearTimeout(deSet);

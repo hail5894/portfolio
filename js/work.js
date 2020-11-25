@@ -33,15 +33,15 @@ if($(window).width() > 991){
          var E = e.originalEvent;
         if(e.originalEvent.deltaY < 0){ 
         // 마우스 휠 내릴 때
-           active(); i+=100;  num+=1;
+           i+=100;  num+=1;
         }else{ 
-            active(); i-=100;  num-=1;
+           i-=100;  num-=1;
         }
         
         if(i<-1300) i=-1300;
         if(i>1) i=0;
-   
-        
+    
+        active();
         $('.work_2').eq(num).css({
          transform: 'scale(1.1)',
         transition: 'transform .5s cubic-bezier(.455,.03,.515,.955),opacity .5s cubic-bezier(.455,.03,.515,.955)'
@@ -116,8 +116,8 @@ if($(window).width() > 991){
             move=0;
             //팝업이 숨겨지면 100% 되는거 리셋
         }
-        $('.contact').fadeIn(500);  //contact 보이기
-          
+        $('.contact').fadeIn(500);  //contact 보이기    
+        active();
     });
    
        

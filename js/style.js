@@ -83,46 +83,55 @@ $(function () {
              });
               
             
-        //css 노가다  
-        localStorage.page = 0;         //page- localStorage=0 선언  
-        if(m1.scale==1){               //scale이 1 완성 됐을시 
+            //css 노가다  
+            localStorage.page = 0;         //page- localStorage=0 선언  
+            if(m1.scale==1){               //scale이 1 완성 됐을시 
             //oneS가 true일시 sy값에 스크롤값 받아내고,  oneS는 false선언
-            if(oneS){sy = window.scrollY; oneS = false;}
-            //main_1의 active 지운다 .padding-top:50vh;  height: 100%;인거
-          $('.main_1').removeClass('active');
-           //1124 나와라
-           $('.main_2').css({
-                  display:"block"
-             });    
-            //main은 fixed한거 absolute 바꾸기
-            $('main').css({
-                    position:'absolute',
-                    top:sy+0,
-                    height:'auto'
-                });
-  
-                 $('.work_1').fadeIn();     //work_1 main써있는거 보이게하기
-  
-                //work_1가 나타나면 사진 scale 1.5커지게하기
-                if($('.work_1').css("display") == "block"){
-                    $('.art_main').addClass('active');
+                (oneS) ? setTimeout(aa,600) : aa(); 
+                //oneS가 true일시 함수 0.6초후 실행,아니면 그냥 실행
+
+                function aa(){
+                    if(oneS){sy = window.scrollY; oneS = false;}
+                    //oneS가 true일때 sy에 현재 스크롤Y값 받아내고 oneS는 false가 된다.
+
+                    //main_1의 active 지운다 .padding-top:50vh;  height: 100%;인거
+                    $('.main_1').removeClass('active');
+                    //1124 나와라
+                    $('.main_2').css({ display:"block" });    
+                    //main은 fixed한거 absolute 바꾸기
+
+//                    if(time){window.scrollTo(0,sy);}
+//                    setTimeout(function(){time=0},1000);
+
+                    $('main').css({
+                        position:'absolute',
+                        top:sy,
+                        height:'auto'
+                    });
+                    //아까 받아논 sy값 집어넣으면 스크롤 위치는 신문지까지 제한이 됨
+
+                    $('.work_1').fadeIn();     //work_1 main써있는거 보이게하기
+                    $('.main_1').offset().top==0;
+                    //work_1가 나타나면 사진 scale 1.5커지게하기
+                    if($('.work_1').css("display") == "block"){
+                        $('.art_main').addClass('active');
+                    }
+                    //localStorage 값 1로 바꾸기,화면전환색 원래대로 바꾸기
+                    localStorage.page = 1;
+                     $('.pageTri').removeClass('pageTri2');
+
+                    //scroll값 구하기
+                    var ms = (sy+$('main').height()) - window.innerHeight;
+                    //sy+메인 높이-윈도우 전체높이
+
+                    if(ms < window.scrollY){
+                        window.scrollTo(0,ms);   
+                       //ms보다 지금 스크롤 높이가 크면 ms로 조절
+                    }else{
+                        window.scrollTo();  //아니면 리셋     
+                    }
                 }
-                //localStorage 값 1로 바꾸기,화면전환색 원래대로 바꾸기
-                localStorage.page = 1;
-                 $('.pageTri').removeClass('pageTri2');
-            
-            
-                //scroll값 구하기
-                var ms = (sy+$('main').height()) - window.innerHeight;
-                //sy+메인 높이-윈도우 전체높이
-                if(ms < window.scrollY){
-                    window.scrollTo(0,ms);   
-                    //ms보다 지금 스크롤 높이가 크면 ms로 조절
-                }else{
-                    window.scrollTo();  //아니면 리셋     
-                }
-                          
-            //↓오해하지말자 (m1.scale==1) else 임
+           //↓오해하지말자 (m1.scale==1) else 임
             }else{
             //main_1의 active 더한다 .padding-top:50vh;  height: 100%;인거
                 $('.main_1').addClass('active');
@@ -137,20 +146,15 @@ $(function () {
                
                 localStorage.page = 0;  //localStorage=0
            }
-        //만약에 sy값이 지금 스크롤보다 크면 메인 fixed로 바꾸기  
-        setTimeout(function(){
-               if(sy > window.scrollY){
+        //만약에 sy값이 지금 스크롤보다 크면 메인 fixed로 바꾸기      
+         if(sy > window.scrollY){
              $('main').css({
                 position:'fixed',
                 top:0,
                 height:'100%'
             });
             oneS = true;    //oneS는 true로 바꿈
-        } 
-        },500);    
-     
-            
-      
+        }
            
     //page- localStorage가 0이면 색깔바꾸기,아니면 지우기
      paged == 0 ? $('.pageTri').addClass('pageTri2') : $('.pageTri').removeClass('pageTri2');
@@ -186,7 +190,6 @@ $(function () {
        if(x>900){x=900}else if(x<100){x=100}
         $('.main_2_1-1 span').css({
             'font-weight': x
-//            'letter-spacing': y+'em'
         });
         
     });

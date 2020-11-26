@@ -46,15 +46,14 @@ $(function () {
    
     //화면전환    
 function nav(){
- 
     fixed = localStorage.fix;
     //localStorage 처음에 무조건 0으로 잡히게 설정
      if($('.m1_clone').length==1){
        localStorage.fix=0;
     }
- 
+
     //localStorage 값에 따라 nav 메뉴에 색상으로 어디 표지에 있는지 가리킴
-    if(fixed == 0){
+    if(localStorage.fix == 0){
         $('.navLi').eq(0).addClass('active');
     }else{
           $('.navLi').eq(fixed).addClass('active');

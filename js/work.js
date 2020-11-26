@@ -99,9 +99,9 @@ if($(window).width() > 991){
         index=$(this).index();  //팝업 여러개중 한개 index번호 받기
         
         $('.popup').eq(index).show();  //해당 popup창 나타나기
-        $('.contact').show();   //contact 숨기기
+        $('.contact').hide();   //contact 숨기기
      
-        $('.hea_cen').fadeOut(); //글씨 숨기기
+        $('.hea_cen').hide(); //글씨 숨기기
         //버거메뉴 중앙으로 이동
         $('.menu-trigger').animate({
                top:'50%',

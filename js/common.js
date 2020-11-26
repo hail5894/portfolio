@@ -4,7 +4,6 @@ $(function () {
   //  $('.contact').load('inc_head_foot.html .contact_1');
     $('.contact_popup').load('inc_head_foot.html .top,.right',x);
     $('.nav').load('inc_head_foot.html .navUl,.bottom',nav);
-
     //콜백함수쓰기
     function me(){
         //버거메뉴 클릭시
@@ -15,14 +14,29 @@ $(function () {
             $('.hea_cen').removeClass('active');
             $('.head_1').removeClass('active'); 
              $('.hea_bot').removeClass('active');
-          
-          
+       
+        
             //nav열렸다 닫혔다
             $('.menu-trigger').toggleClass('active');
             $('.nav').toggleClass('active');
             $('.contact a').toggleClass('active');  //nav 열리는 동시 글씨색상 변경
-
-
+              
+            
+        //work-page 일때 header 색상 조정
+        if(localStorage.fix=1){
+            if( $('.menu-trigger span').eq(2).css('opacity')==0){
+                  $('header').css({
+                     transition:'.5s'
+                });
+            setTimeout(function(){
+                $('.menu-trigger span').addClass('active');
+                $('.hea_cen').addClass('active');
+                $('.head_1').addClass('active'); 
+                $('.hea_bot').addClass('active');  
+                $('header').removeClass('active');
+            },400);
+            }
+        }
         });
     } 
        

@@ -5,11 +5,16 @@ $(function () {
     var touchStart=0,touchEnd=0,touch=0;
     var index=0, url;
    var moveTop,deSet,idx=0;  //팝업 마우스 휠 했을떄 선언
-    
    //헤더 active (백그라운드 투명//믹스블랜드모드)
     $('header').addClass('active');
     //active 함수는 css 처음 시작 발동 함수
+   
+    
+    
     function active(){
+    $('header').css({
+        transition:'0s'
+       });
         $('header').removeClass('active');
         $('.menu-trigger span').addClass('active');
         $('.hea_cen').addClass('active');
@@ -18,15 +23,21 @@ $(function () {
     }
    
     
-    function active_1(){
-        $('header').addClass('active');
-        $('.menu-trigger span').removeClass('active');
-        $('.hea_cen').removeClass('active');
-        $('.head_1').removeClass('active'); 
-        $('.hea_bot').removeClass('active');
+    function active_1(t){
+         $('header').css({
+                 transition:'.8s'
+            });
+        
+        setTimeout(function(){
+            $('header').addClass('active'); 
+        
+            $('.menu-trigger span').removeClass('active');
+            $('.hea_cen').removeClass('active');
+            $('.head_1').removeClass('active'); 
+            $('.hea_bot').removeClass('active');
+        },10);
     }
     //$('.work_2_seat') 휠 이벤트 발동
-    
 if($(window).width() > 991){     
     $('.work_2_seat').on('wheel DOMMouseScroll',function(e){
          var delta = 0;
@@ -50,7 +61,7 @@ if($(window).width() > 991){
             transform:"translateX("+i+"px)",
              transition: '0.5s cubic-bezier(0,0,.2,1)'
         });
-        
+
     });
 
         
@@ -82,43 +93,51 @@ if($(window).width() > 991){
  
         
      
-    //3.팝업 띄우기/work_goods는 work.html,work_goods는 work_de.html
+    //3.팝업 띄우기/work_goods는 work.html
     $('.work_goods').on('click',function(e){
         e.preventDefault();
         index=$(this).index();  //팝업 여러개중 한개 index번호 받기
         
-        $('.popup').eq(index).fadeIn(500);  //해당 popup창 나타나기
-        $('.contact').hide();   //contact 숨기기
+        $('.popup').eq(index).show();  //해당 popup창 나타나기
+        $('.contact').show();   //contact 숨기기
      
-        $('.hea_cen').fadeOut(500); //글씨 숨기기
+        $('.hea_cen').fadeOut(); //글씨 숨기기
         //버거메뉴 중앙으로 이동
         $('.menu-trigger').animate({
                top:'50%',
-               color: '#f4f4f4'
+               color:'#f4f4f4'
             },100);
         $('.back').show();  //뒤로가기 버튼 나오기
-        active_1();
        
-    });
+        active_1();
+//       $('header').css({
+//        background:'#2f2f2f'    
+//       });  
+        //background색 맞춰주기
+        });
     
        //뒤로가기 누르면 이벤트 발생
     $('.back').on('click',function(){
         //팝업 숨기기, 버거메뉴 원래 위치 이동
         $('.popup').fadeOut(500);
-         $('.menu-trigger').animate({
+        $('.menu-trigger').animate({
                top:'2%'
             },100);
         $('.back').hide();  //뒤로가기 버튼 숨기기
-         $('.hea_cen').fadeIn(500); //글씨 보이기
+        $('.hea_cen').fadeIn(500); //글씨 보이기
         
         if($('.popup').hide()){
-         $('.popMove').css({
+        $('.popMove').css({
             transform: 'translateX('+0+'%)'});
             move=0;
             //팝업이 숨겨지면 100% 되는거 리셋
         }
         $('.contact').fadeIn(500);  //contact 보이기    
         active();
+//        $('header').css({
+//            background:'#f4f4f4'
+//        });
+        //background색 맞춰주기
     });
    
        
@@ -146,7 +165,7 @@ if($(window).width() > 991){
     function popup(e){
         clearTimeout(deSet);    //deSet= setTimeout을 취소
         deSet = setTimeout(function(){
-            e.originalEvent.deltaY < 0 ? move+=100 : move-=100;
+        e.originalEvent.deltaY < 0 ? move+=100 : move-=100;
             //마우스 휠을 아래로 움직이면 +100/올리면 -100
             if(move>99) move=0;     //수치 제한
             if(move<-201) move=-200;    //수치 제한
@@ -155,7 +174,7 @@ if($(window).width() > 991){
             $('.popMove').css({
                 transform: 'translateX('+(move)+'%)',
                 transition: '0.5s ease-in-out'   
-             });
+            });
         },100);
         
     }
@@ -185,19 +204,19 @@ if($(window).width() > 991){
         //다른 전환과 차이점을 두기위해 배경색 흰색으로 바꿈
         $('.pageTri').css({
             background:'#f4f4f4'
-       });
+        });
         $('.pageTri').show();
         //0.01초 active 실행
         setTimeout(function(){$('.pageTri').addClass('active');},10);
         
         
         //0.6초후 위에 있는 모든 전환 실행후 work_de 페이지로 이동
-         setTimeout(function(e) { 
-               url = "./work_de.html";
-              $(location).attr('href',url);
-                $('body').addClass('active');   //투명 0에서 1로 실행
-            }, 200);
-        });
+        setTimeout(function(e) { 
+            url = "./work_de.html";
+            $(location).attr('href',url);
+            $('body').addClass('active');   //투명 0에서 1로 실행
+        }, 200);
+    });
   
     
    //모바일
@@ -206,58 +225,118 @@ if($(window).width() > 991){
         $('html,body').css({
            overflow:'auto' 
         });
-    //↓ 클릭시 해당 영역 내려가기
-    $('.work_1_port_3 span').eq(1).on('click',function(){
-           var a=  $('.work_1_port_3').offset().top
-            $(window).scrollTop(a);    
+        //↓ 클릭시 해당 영역 내려가기
+        $('.work_1_port_3 span').eq(1).on('click',function(){
+                var a=  $('.work_1_port_3').offset().top    
+            $('html').animate({
+                scrollTop: a
+             }, 500);
         });
-        //뒤로가기 클릭시 위에 붙어 있게 css 조정
+            //뒤로가기 클릭시 위에 붙어 있게 css 조정
         $('.back').on('click',function(){
-        $('.popup').fadeOut(500);
-         $('.menu-trigger').animate({
-               top:'30%'
-            },100);
-        $('.back').hide();  //뒤로가기 숨기기
-         $('.hea_cen').fadeIn(500); //글씨 나타나게 하기
-        
-        if($('.popup').hide()){
-         $('.popMove').css({
-            transform: 'translateX('+0+'%)'});
-            move=0;
-            //팝업창이 사라지면 해당 위치 리셋
-        }
-        $('.contact').fadeIn(500);     //contact 나타나기
-         $('.work_goods').height(220);      //위치 조정
-            
-    });
-    //3.팝업 클릭시
-    $('.work_goods').on('click',function(e){
-        e.preventDefault();
-        index=$(this).index();
-        $(this).css({
-            height:'100%'
-        });
-        //해당 높이를 100%나타내기
-        $('.contact').hide();   //contact 숨기기
-        $('.menu-trigger').animate({
-               top:'50%',
-               color: '#f4f4f4'
-            },100);
-        //버거메뉴 위치 조정
-        $('.back').show();  //뒤로가기 나타내기
-        $('.popup').eq(index).fadeIn(2000); //맨마지막 미관상 popup나타내기
+                $('.popup').fadeOut(500);
+                $('.menu-trigger').animate({
+                   top:'30%'
+                },100);
+                $('.back').hide();  //뒤로가기 숨기기
+                $('.hea_cen').fadeIn(500); //글씨 나타나게 하기
 
-    });
-    
-   
-    $('.back').on('mouseover',function(){
-        $(this).toggleClass('active');
-         idx=0;
-    });
+                if($('.popup').hide()){
+             $('.popMove').css({
+                transform: 'translateX('+0+'%)'});
+                move=0;
+                //팝업창이 사라지면 해당 위치 리셋
+                }
+            $('.contact').fadeIn(500);     //contact 나타나기
+            $('.work_goods').height(220);      //위치 조정
+
+        });
+        //3.팝업 클릭시
+        $('.work_goods').on('click',function(e){
+            e.preventDefault();
+            index=$(this).index();
+            $(this).css({
+                height:'100%'
+            });
+            //해당 높이를 100%나타내기
+            $('.contact').hide();   //contact 숨기기
+            $('.menu-trigger').animate({
+                   top:'50%',
+                   color: '#f4f4f4'
+                },100);
+            //버거메뉴 위치 조정
+            $('.back').show();  //뒤로가기 나타내기
+            $('.popup').eq(index).fadeIn(2000); //맨마지막 미관상 popup나타내기
+
+        });
+
+
+        $('.back').on('mouseover',function(){
+            $(this).toggleClass('active');
+            idx=0;
+        });
        
         //모바일 end
     }
     
+    
+    
+    //popup창 일부조정
+     if($(window).width() > 1500){
+          $('.aa-3').css({
+            'padding-top':'6%',
+            'padding-left':'0%'
+        });
+         
+            $('.aa-4').css({
+            'padding-top':'10%'
+        });
+     }
+    if($(window).width() < 1500 && $(window).width() > 1250 ){
+        $('.aa-3').css({
+            'padding-top':'10%',
+            'padding-left':'8%'
+        });
+         $('.aa-4').css({
+            'padding-top':'15%'
+        });
+        
+        
+    }
+    
+       if($(window).width() < 1249 && $(window).width() > 991 ){
+        $('.aa-3').css({
+            'padding-top':'5%',
+            'padding-left':'8%'
+        });
+      
+          $('.aa-4').css({
+            'padding-top':'10%'
+        });
+        
+    }
+    
+       if($(window).width() < 990 && $(window).width() > 769 ){
+               $('.aa-2').css({
+            'margin-left':'6%'
+        });
+        $('.aa-3').css({
+            'padding-top':'14%',
+            'padding-left':'8%'
+        });
+           
+       $('.aa-5').css({
+            left:'55%',
+            top:'-42%'
+        });
+       }
+     if($(window).width() < 768 && $(window).width() > 480 ){
+            $('.aa-5').css({
+            left:'45%',
+            top:'-38%'
+        });
+    }
+    //모바일end
     //end
 });
 

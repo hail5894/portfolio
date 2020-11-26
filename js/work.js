@@ -59,7 +59,7 @@ if($(window).width() > 991){
         });
         $('.work_2').css({
             transform:"translateX("+i+"px)",
-             transition: '0.5s cubic-bezier(0,0,.2,1)'
+            transition: '0.5s cubic-bezier(0,0,.2,1)'
         });
 
     });
@@ -227,10 +227,10 @@ if($(window).width() > 991){
         });
         //↓ 클릭시 해당 영역 내려가기
         $('.work_1_port_3 span').eq(1).on('click',function(){
-                var a=  $('.work_1_port_3').offset().top    
-            $('html').animate({
-                scrollTop: a
-             }, 500);
+            var a=  $('.work_1_port_3').offset().top;   
+            $(window).scrollTop(a);
+
+       
         });
             //뒤로가기 클릭시 위에 붙어 있게 css 조정
         $('.back').on('click',function(){
@@ -266,7 +266,7 @@ if($(window).width() > 991){
                 },100);
             //버거메뉴 위치 조정
             $('.back').show();  //뒤로가기 나타내기
-            $('.popup').eq(index).fadeIn(2000); //맨마지막 미관상 popup나타내기
+            $('.popup').eq(index).fadeIn(800); //맨마지막 미관상 popup나타내기
 
         });
 
@@ -317,9 +317,9 @@ if($(window).width() > 991){
     }
     
        if($(window).width() < 990 && $(window).width() > 769 ){
-               $('.aa-2').css({
+           $('.aa-2').css({
             'margin-left':'6%'
-        });
+            });
         $('.aa-3').css({
             'padding-top':'14%',
             'padding-left':'8%'
@@ -327,7 +327,7 @@ if($(window).width() > 991){
            
        $('.aa-5').css({
             left:'55%',
-            top:'-42%'
+            top:'-40%'
         });
        }
      if($(window).width() < 768 && $(window).width() > 480 ){
@@ -336,6 +336,8 @@ if($(window).width() > 991){
             top:'-38%'
         });
     }
+    
+    
     //모바일end
     //end
 });

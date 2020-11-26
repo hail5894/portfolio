@@ -370,7 +370,7 @@
         height: 450px;
         padding-left: 0%;
         padding-top: 0%;
-        margin-top: 5%;
+        margin-top: 10%;
        
     }
     /*2*/
@@ -443,7 +443,7 @@
         width: 100%;
         position: absolute;
         left: 55%;
-        top: -36%;
+        top: -39%;
     }
     .popup .popup_seat .popup_3 .right_detail{
         height: 100%;
@@ -601,8 +601,8 @@
        
         width: 100%;
         position: absolute;
-        left: 55%;
-        top: -38%;
+        left: 50%;
+        top: -39%;
     }
     
 
@@ -721,7 +721,7 @@
        margin-left: 5%;
         padding-left: 5%;
         margin: 0 auto;
-       
+        padding-top: 8% !important;
      
     }
     .popup .popup_seat .popup_2 .right_detail .right_de_1 p{

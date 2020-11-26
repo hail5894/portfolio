@@ -4,6 +4,9 @@ $(function () {
   //  $('.contact').load('inc_head_foot.html .contact_1');
     $('.contact_popup').load('inc_head_foot.html .top,.right',x);
     $('.nav').load('inc_head_foot.html .navUl,.bottom',nav);
+    
+    
+    var index=0 ,fixed = localStorage.fix;  //선언
     //콜백함수쓰기
     function me(){
         //버거메뉴 클릭시
@@ -22,8 +25,8 @@ $(function () {
             $('.contact a').toggleClass('active');  //nav 열리는 동시 글씨색상 변경
               
             
-        //work-page 일때 header 색상 조정
-        if(localStorage.fix=1){
+        //work page 일때 조정
+        if(localStorage.fix==1){
             if( $('.menu-trigger span').eq(2).css('opacity')==0){
                   $('header').css({
                      transition:'.5s'
@@ -34,7 +37,7 @@ $(function () {
                 $('.head_1').addClass('active'); 
                 $('.hea_bot').addClass('active');  
                 $('header').removeClass('active');
-            },400);
+            },500);
             }
         }
         });
@@ -43,7 +46,7 @@ $(function () {
    
     //화면전환    
 function nav(){
-    var index=0 ,fixed = localStorage.fix;  //선언
+ 
   
     //localStorage 처음에 무조건 0으로 잡히게 설정
      if($('.m1_clone').length==1){

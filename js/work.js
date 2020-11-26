@@ -6,9 +6,10 @@ $(function () {
     var index=0, url;
    var moveTop,deSet,idx=0;  //팝업 마우스 휠 했을떄 선언
    //헤더 active (백그라운드 투명//믹스블랜드모드)
+    
     $('header').addClass('active');
     //active 함수는 css 처음 시작 발동 함수
-   
+  
     
     
     function active(){

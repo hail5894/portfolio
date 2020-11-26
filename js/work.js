@@ -257,7 +257,8 @@ if($(window).width() > 991){
             e.preventDefault();
             index=$(this).index();
             $(this).css({
-                height:'100%'
+                height:'100%',
+                transition:'.5s'
             });
             //해당 높이를 100%나타내기
             $('.contact').hide();   //contact 숨기기
@@ -267,7 +268,7 @@ if($(window).width() > 991){
                 },100);
             //버거메뉴 위치 조정
             $('.back').show();  //뒤로가기 나타내기
-            $('.popup').eq(index).fadeIn(800); //맨마지막 미관상 popup나타내기
+            $('.popup').eq(index).fadeIn(400); //맨마지막 미관상 popup나타내기
 
         });
 

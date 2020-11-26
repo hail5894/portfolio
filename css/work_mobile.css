@@ -444,9 +444,12 @@
         position: absolute;
         left: 55%;
         top: -39%;
+        
+        display: none;
     }
     .popup .popup_seat .popup_3 .right_detail{
         height: 100%;
+        padding-top: 2%;
     }
 
     .popup .popup_seat .popup_3 .left_img img:nth-of-type(2){

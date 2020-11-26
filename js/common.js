@@ -6,7 +6,7 @@ $(function () {
     $('.nav').load('inc_head_foot.html .navUl,.bottom',nav);
     
     
-    var index=0 ,fixed = localStorage.fix;  //선언
+    var index=0 ,fixed;  //선언
     //콜백함수쓰기
     function me(){
         //버거메뉴 클릭시
@@ -47,7 +47,7 @@ $(function () {
     //화면전환    
 function nav(){
  
-  
+    fixed = localStorage.fix;
     //localStorage 처음에 무조건 0으로 잡히게 설정
      if($('.m1_clone').length==1){
        localStorage.fix=0;

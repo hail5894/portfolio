@@ -545,6 +545,7 @@
     .popup .popup_seat .popup_2 .right_detail .right_de_1 p:nth-of-type(2){
         width: 80%;
         font-size: 14px;
+        line-height: 1.7em;
     }
     .popup .popup_seat .popup_2{
         transform: translateX(-200%);
@@ -565,7 +566,7 @@
    
     .popup .popup_seat .popup_2 .right_detail{
         width: 100%;
-   
+        padding-top: 0;
         padding-left: 0%;
        
      
@@ -606,6 +607,8 @@
         position: absolute;
         left: 50%;
         top: -39%;
+        
+        display: none;
     }
     
 

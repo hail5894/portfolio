@@ -268,7 +268,7 @@ if($(window).width() > 991){
                 },100);
             //버거메뉴 위치 조정
             $('.back').show();  //뒤로가기 나타내기
-            $('.popup').eq(index).fadeIn(400); //맨마지막 미관상 popup나타내기
+            $('.popup').eq(index).fadeIn(200); //맨마지막 미관상 popup나타내기
 
         });
 

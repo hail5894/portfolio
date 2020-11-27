@@ -132,7 +132,7 @@ main .resume .resume_1 {
 
 
 main .resume .resume_1 .resume_1_de {
-  border-bottom: 1px solid #e4755c;
+  border-bottom: 1px dashed #e4755c;
   padding: 17px 0 10px 45%;
   position: relative;
   white-space: pre-line;
@@ -142,7 +142,7 @@ main .resume .resume_1 .resume_1_de {
  
 }
 main .resume .resume_1 .resume_1_de:nth-of-type(1){
-    border-top: 1px solid #e4755c;
+    border-top: 1px dashed #e4755c;
 }
 .resume_1_de_p{
     display: block !important;

@@ -54,7 +54,7 @@ main .work_de .work_de_1 a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-top: 1px solid #e4755c;
+    border-top: 1px dashed #e4755c;
     padding: 14px 0 14px 2%;
     position: relative;
 }

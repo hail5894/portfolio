@@ -15,7 +15,7 @@ $(function () {
             $('.hea_cen').removeClass('active');
             $('.head_1').removeClass('active'); 
              $('.hea_bot').removeClass('active');
-       
+            
         
             //nav열렸다 닫혔다
             $('.menu-trigger').toggleClass('active');
@@ -44,7 +44,6 @@ $(function () {
    
     //화면전환    
 function nav(){
- 
     
     transformed = localStorage.transform;
     //localStorage 처음에 무조건 0으로 잡히게 설정
@@ -100,10 +99,18 @@ function nav(){
     $('.navLi').on('mouseover',function(){
          $('.navLi').removeClass('active');
            $(this).addClass('active'); 
-        //nav마우스 위에 댈때마다 해당 nav 옆으로 밀어짐(마우스떼면 원래 위치로 제자리)
+     //nav마우스 위에 댈때마다 해당 nav 옆으로 밀어짐(마우스떼면 원래 위치로 제자리)
         });
     
-
+        $('.right_a a, .bottom_2 a').on('mouseover',function(){      
+            $(this).children('p').stop().fadeIn(100);
+   
+        });
+    
+     $('.right_a a, .bottom_2 a').on('mouseleave',function(){
+             $('.right_a a,.bottom_2 a').children('p').stop().fadeOut(100); 
+   
+        });
 }
 
 

@@ -336,6 +336,8 @@ height: 100%;
   transition: .5s;
 }
 
+
+
 /*  */
 .contact {
   position: fixed;
@@ -406,21 +408,80 @@ height: 100%;
   padding-top: 10%;
     position: relative;
     height: 100%;
+    
 }
-
-.right a{
+.right .right_a{
     position: absolute;
-    right: 0; bottom: 2%;
+    right: 0; bottom: 2%; 
 }
 
-.right a:nth-of-type(1){
-    right: 12%;
+.right .right_a a, .bottom_2 a{
+  position: relative;
+  display: inline-block;
 }
-.right a img{
+.right a img,.bottom_2 a img{
     width: 30px;
     height: 30px;
     opacity: .8;
+    
+    display: block;
+    cursor: pointer;
 }
+.right a img:nth-of-type(1){
+    margin: 0 10px;
+}
+
+.bottom_2 a img:nth-of-type(1){
+    margin: 0 5px;
+}
+.right .right_a a .arrow_box,.bottom_2 a .arrow_box{
+ display: none;
+ position: absolute;
+  width: 150px;
+  padding: 8px;
+  right: -100%;
+  bottom: 120%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;  
+  border-radius: 8px;
+  color: #eb5938;
+ background: #333;
+ font-size: 18px;
+ text-align: center;
+font-weight: bold;
+}
+
+.bottom_2 a .arrow_box:after {
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: none;
+  border-top-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+} 
+.right .right_a a .arrow_box:after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: none;
+  border-top-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+} 
+
+
+
 .contact_popup .right .x{
     position: absolute;
     right: 0%;

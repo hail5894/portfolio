@@ -4,7 +4,7 @@ $(function () {
   //  $('.contact').load('inc_head_foot.html .contact_1');
     $('.contact_popup').load('inc_head_foot.html .top,.right',x);
     $('.nav').load('inc_head_foot.html .navUl,.bottom',nav);
-    var index=0 ,fixed;  //선언
+    var index=0 ,transformed;  //선언
     //콜백함수쓰기
     function me(){
         //버거메뉴 클릭시
@@ -45,17 +45,18 @@ $(function () {
     //화면전환    
 function nav(){
  
-    fixed = localStorage.fix;
+    
+    transformed = localStorage.transform;
     //localStorage 처음에 무조건 0으로 잡히게 설정
      if($('.m1_clone').length==1){
-       localStorage.fix=0;
+       localStorage.transform=0;
     }
  
     //localStorage 값에 따라 nav 메뉴에 색상으로 어디 표지에 있는지 가리킴
-    if(localStorage.fix == 0){
+    if(localStorage.transform == 0){
         $('.navLi').eq(0).addClass('active');
     }else{
-          $('.navLi').eq(fixed).addClass('active');
+          $('.navLi').eq(transformed).addClass('active');
     }
       
    //navLi로 클릭해서 해당메뉴로 넘어가면 localStorage에 nav에 있는 data-type값을 받아옴 
@@ -63,7 +64,7 @@ function nav(){
         e.preventDefault();
         index=$(this).index();  //해당 index번호 담김
         //1 페이지 값남기는거 
-        localStorage.fix = $(this).attr('data-type');   
+        localStorage.transform = $(this).attr('data-type');   
         pageActive();   //그리고 해당 페이지에 넘어가게 설정
     });
     
@@ -71,7 +72,7 @@ function nav(){
     //1124에 있는 more을 클릭하면 work로 넘어가면서 localStorage값 1로 남김
     $('.main_2_1 .more a').on('click',function(e){
           e.preventDefault();
-          localStorage.fix=1;
+          localStorage.transform=1;
     });
     
    

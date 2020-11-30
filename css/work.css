@@ -55,14 +55,19 @@ main .work_1 .wo_title .wo_title_top p img {
 }
 
 main .work_1 .wo_title .wo_title_top span {
-    font-family: Roboto Slab;
+   font-family: Noto Sans;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: -1.45;
     font-size: 14px;
     color: #1a1a1a;
+    
     font-weight: bold;
     letter-spacing: .01em;
     display: block;
-    -webkit-transform: rotate(90deg) translate(10px, 18px);
-    transform: rotate(90deg) translate(10px, 18px);
+    -webkit-transform: rotate(90deg) translate(8px, 16px);
+    transform: rotate(90deg) translate(8px, 16px);
 }
 
 main .work_1 .wo_title .wo_title_button {
@@ -197,13 +202,14 @@ main .work_2_seat .work_2 .work_goods a .goods_srp {
 main .work_2_seat .work_2 .work_goods a .goods_srp p {
     font-family: NanumGothic;
     font-size: 20px;
-    color: #1a1a1a;
+    color: #333;
     font-weight: bold;
 }
 
 main .work_2_seat .work_2 .work_goods a .goods_srp p:nth-of-type(3) {
     font-size: 13px;
     font-weight: normal;
+    color: #444;
 }
 
 main .work_2_seat .work_2 .goods_detail {
@@ -216,9 +222,13 @@ main .work_2_seat .work_2 .goods_detail a {
 }
 
 main .work_2_seat .work_2 .goods_detail a .goods_detail_1 p {
-    font-family: Roboto Slab;
+     font-family: Noto Sans;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: -1.45;
     font-size: 60px;
-    color: #1a1a1a;
+    color: #333;
     font-weight: bold;
     margin: 0;
     width: 25vw;
@@ -226,12 +236,15 @@ main .work_2_seat .work_2 .goods_detail a .goods_detail_1 p {
 }
 
 main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
-    font-family: Roboto Slab;
+   font-family: Noto Sans;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: -1;
     font-size: 20px;
-    color: #1a1a1a;
-    padding-top: 15px;
-    font-size: 25px;
-    letter-spacing: .02em;
+    font-weight: 500;
+    color: #444;
+    padding-top: 25px;
     line-height: .8;
 }
 
@@ -252,7 +265,9 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
     position: fixed;
     right: 7%;
     top: 0%;
-    font-family: Chakra Petch;
+    font-family: hurme;
+    
+    letter-spacing: -1.4;
     font-size: 16px;
     color: #f4f4f4;
     text-decoration: none;
@@ -315,7 +330,8 @@ main .work_2_seat .work_2 .goods_detail a .goods_deta_icon p {
     padding-top: 46px;
     position: relative;
     text-decoration: none;
-    font-family: Chakra Petch;
+    font-family: hurme;
+    letter-spacing: -1.4;
     font-size: 16px;
     color: #f4f4f4;
     opacity: .2;

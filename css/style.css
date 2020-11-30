@@ -63,7 +63,11 @@ main {
 }
 
 .work_1 .wo_title .wo_title_top span {
-    font-family: Roboto Slab;
+     font-family: Noto Sans;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: -1.45;
     font-size: 14px;
     color: #1a1a1a;
     
@@ -71,8 +75,8 @@ main {
     font-weight: bold;
     letter-spacing: .01em;
     display: block;
-    -webkit-transform: rotate(90deg) translate(10px, 16px);
-    transform: rotate(90deg) translate(10px, 16px);
+    -webkit-transform: rotate(90deg) translate(8px, 13px);
+    transform: rotate(90deg) translate(8px, 13px);
 }
 
 .work_1 .wo_title .wo_title_button {
@@ -187,7 +191,7 @@ main .main_1 .main_1_1 div .art_head .art_head_2 p {
     font-weight: 600;
     font-family: NanumGothic;
     font-size: 30px;
-    color: #1a1a1a;
+    color: #333;
 }
 
 main .main_1 .main_1_1 div .art_head .art_head_2 p span {
@@ -243,11 +247,14 @@ main .main_1 .main_1_1 div .art_main2 .main_left h3 {
     text-align: center;
     font-size: 36px;
     font-weight: 600;
+    color: #1a1a1a;
 }
 
 main .main_1 .main_1_1 div .art_main2 .main_left ul {
     margin-top: 40px;
     line-height: 1.6;
+    color: #333;
+    list-style: square;
 }
 
 main .main_1 .main_1_1 div .art_main2 .main_left ul li {
@@ -257,6 +264,7 @@ main .main_1 .main_1_1 div .art_main2 .main_left ul li {
 main .main_1 .main_1_1 div .art_main2 .main_right {
     padding: 0 5%;
     width: 50%;
+    color: #1a1a1a;
 }
 
 main .main_1 .main_1_1 div .art_main2 .main_right h3 {
@@ -268,6 +276,8 @@ main .main_1 .main_1_1 div .art_main2 .main_right h3 {
 main .main_1 .main_1_1 div .art_main2 .main_right ul {
     margin-top: 40px;
     line-height: 1.6;
+    color: #333;
+       list-style: square;
 }
 
 main .main_1 .main_1_1 div .art_main2 .main_right ul li {
@@ -550,6 +560,7 @@ main .main_2 .main_2_1 .tri {
     main .main_1 .main_1_1 div .art_main2 .main_left ul,
     main .main_1 .main_1_1 div .art_main2 .main_right ul {
         margin-top: 80px;
+        
     }
 
     .haha {

@@ -10,7 +10,7 @@ $(function () {
        
     
     
-    $('.work_de_1 a').on('mouseover',hover);    //a태그 mouseover할때 그림 튀어나옴
+    $('.work_de_1 li').on('mouseover',hover);    //a태그 mouseover할때 그림 튀어나옴
     
     //a태그 index 번호를 받아서 해당이미지 classactive 시켜주고 뺴주고
     function hover(){
@@ -26,7 +26,7 @@ $(function () {
     }
     
     //a태그 클릭시 숨겨진 popup창 발tod
-     $('.work_de_1 a').on('click',function(e){
+     $('.work_de_1 li').on('click',function(e){
         e.preventDefault();
         index=$(this).index();  //팝업 여러개중 한개 index번호 받기
         

@@ -45,7 +45,7 @@
 }
 body{
     opacity: 0;
-    transition: .2s;
+    transition: .6s;
 }
 body.active{
     opacity: 1;

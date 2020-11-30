@@ -200,24 +200,56 @@ if($(window).width() > 991){
 
   //work 누르면 메뉴 모아둔 페이지 이동(화면전환)
     $('.goods_detail').on('click',function(e){
-     e.preventDefault();  
-        //다른 전환과 차이점을 두기위해 배경색 흰색으로 바꿈
-        $('.pageTri').css({
-            background:'#f4f4f4'
-        });
-        $('.pageTri').show();
-        //0.01초 active 실행
-        setTimeout(function(){$('.pageTri').addClass('active');},10);
-        
-        
-        //0.6초후 위에 있는 모든 전환 실행후 work_de 페이지로 이동
-        setTimeout(function(e) { 
-            url = "./work_de.html";
-            $(location).attr('href',url);
-            $('body').addClass('active');   //투명 0에서 1로 실행
-        }, 200);
+         e.preventDefault();
+         $('.work_de').css({
+             transform: 'translateX(0%)' 
+         });
+    $('.works_imgs').addClass('active');    //그림이미지 opacity :1로 처음에 보여라
+    $('.works_imgs img').eq(0).addClass('active');  //처음에 대갈빡이미지 보이게 설정
+    $('.contact').hide(); 
     });
   
+    //popup창 list
+    $('.work_de_1 li').on('mouseover',hover);    //a태그 mouseover할때 그림 튀어나옴
+    //a태그 index 번호를 받아서 해당이미지 classactive 시켜주고 뺴주고
+    function hover(){
+        index = $(this).index();
+        
+         $('.works_imgs').removeClass('active');
+        $('.works_imgs img').removeClass('active');
+        
+        setTimeout(function(){
+         $('.works_imgs').addClass('active');
+         $('.works_imgs img').eq(index).addClass('active');
+        },200);
+    }
+    
+     $('.work_de_1 li').on('click',function(e){
+        e.preventDefault();
+        index=$(this).index();  //팝업 여러개중 한개 index번호 받기
+        
+        $('.popup').eq(index).show();  //해당 popup창 나타나기
+        $('.contact').hide();   //contact 숨기기
+     
+        $('.hea_cen').hide(); //글씨 숨기기
+        //버거메뉴 중앙으로 이동
+        $('.menu-trigger').animate({
+               top:'50%',
+               color: '#f4f4f4'
+            },100);
+        $('.back').show();  //뒤로가기 버튼 나오기
+    
+       active_1();
+    });
+    
+        $('.work_de_x').on('click',function(e){
+             e.preventDefault();
+             $('.work_de').css({
+             transform: 'translateX(120%)' 
+         });
+             $('.contact').show(); 
+            active();
+        });
     
    //모바일
     if($(window).width() < 991){

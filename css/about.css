@@ -117,32 +117,44 @@ main .resume .resume_1 {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-    padding-top: 14%;
+    padding-top: 12%;
     margin-top: 2%;   
-    margin-left: 12%;
+    margin-left: 14%;
 }
 
-main .resume .resume_1 h2 {
-    font-family: GothicA1;
+main .resume .resume_1>div{
+    font-family: Noto Sans;
     text-align: center;
-    font-size: 125px;
-    color: #555;
+   
+    position: absolute;
+    left: -75%;
+    top: 0%;
+    
+    white-space: nowrap;
+}
+
+main .resume .resume_1>div p{
+    font-size: 14px;
+    color: #f4f4f4;
     font-weight: 400;
     line-height: .8;
-    text-transform: uppercase;
-    width: 90%;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding: 5px 0;
     margin-bottom: 0;
-    padding-top: 4%;
-    
-    position: absolute;
-    left: -40%;
-    top: 0;
+    width: 50%;
+    background: #333;
+}
+main .resume .resume_1>div h2{
+    font-size: 60px;
+    color:#333;
+    margin-top: 15px;
+}
+main .resume .resume_1>div h2 span{
+    color: #eb5938;
 }
 main .resume .resume_1 .resume_1_de {
     border-bottom: 1px dashed #e4755c;
-    padding: 10px 0;
+    padding: 13px 0;
     position: relative;
     white-space: pre-line;
     display: flex;
@@ -179,7 +191,7 @@ main .resume .resume_1 .resume_1_de li h3{
 main .resume .resume_1 .resume_1_de li p {
     margin: 0;
     font-family: GothicA1;
-    font-size: 17px;
+    font-size: 16px;
     color: #444;
     padding-left: 2%;
     white-space: nowrap;
@@ -192,23 +204,22 @@ main .resume .resume_left {
   padding-bottom: 40%;
   pointer-events: none;
     
-    padding-top: 16%;
+    padding-top: 14%;
     margin-top: 4%;
-    
-    padding-left: 16%;
+    padding-left: 10%;
  
 }
 
 main .resume .resume_left img {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
 }
 
 main .resume .resume_left h3 {
     padding-top: 2%;
     padding-left: 2%;
     width: 100%;
-    font-size: 22px;
+    font-size: 30px;
     color: #1a1a1a;
     font-weight: 500;
     line-height: 1.2em;
@@ -218,7 +229,7 @@ main .resume .resume_left h3 {
     letter-spacing:-1.4;
     font-stretch: normal;
     font-style: normal;
-    transform: translateX(5%);
+    transform: translateX(1%);
 }
 main .resume .resume_left h3 span{
     display: block;
@@ -244,14 +255,14 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: GothicA1;
-  font-size: 15px;
+  font-family: Noto Sans;
+  font-size: 16px;
   color: #1a1a1a;
   margin-top: 5px;
 }
 
 .fontDown{
-    font-size: 15px !important;
+    font-size: 16px !important;
     margin: 0;
 }
 main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p img {
@@ -262,7 +273,7 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p img {
 
 main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
   font-family: GothicA1;
-  font-size: 12px;
+  font-size: 14px;
   color: #1a1a1a;
   font-weight: bold;
   padding-left: 10px;
@@ -272,40 +283,64 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
 /*모바일*/
 @media (max-width: 1500px) and (min-width: 1252px) {
     main .resume .resume_1{
-      padding-top: 17%;
+      padding-top:18%;
     }
    main .resume .resume_1 .resume_1_de li{
         line-height: 1.0em;
     }
     main .resume .resume_left{
-        padding-left: 6%;
-        padding-top: 25%;
+        padding-left: 3%;
+        padding-top: 20%;
     }
-    main .resume .resume_1 h2{
-        font-size: 100px;
+    main .resume .resume_1>div{
+        left: -70%;
+        top: 1%;
+    }
+   main .resume .resume_1>div h2{
+        font-size: 50px;
+    }
+    main .resume .resume_left img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    main .resume .resume_left h3{
+        font-size: 26px;
+    }
+    
+    main .resume .resume_1 .resume_1_de{
+        padding: 10px 0;
     }
     main .resume .resume_1 .resume_1_de li h3{
-        width: 120px;
-        font-size: 18px;
+        width: 160px;
+        font-size: 20px;
     }
     main .resume .resume_1 .resume_1_de li p{
-        font-size: 15px;
+        font-size: 16px;
     }
     main .resume .resume_1 .resume_1_de li:nth-of-type(2){
         width: 90%;
     }
     
     main .resume .resume_1 .resume_1_de li p{
-        padding-left: 20%;
+        padding-left: 5%;
     }
     .fontDown{
         white-space: normal !important;
-        width: 100%;
+            width: 100%;
+            font-size: 16px !important;
+    }
+    
+    main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p{
+        font-size: 16px;
     }
     /*end*/
 }
 
 @media (max-width: 1251px) and (min-width: 991px) {
+    main .resume{
+        width: 90%;
+    }
     main .resume .resume_1{
         padding-top: 20%;
         margin-left: 10%;
@@ -314,11 +349,15 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
         line-height: 1.0em;
     }
     main .resume .resume_left{
-        padding-left: 6%;
+        padding-left: 0%;
         padding-top: 25%;
     }
-    main .resume .resume_1 h2{
-        font-size: 90px;
+     main .resume .resume_1>div{
+        left: -60%;
+        top: 1%;
+    }
+   main .resume .resume_1>div h2{
+        font-size: 40px;
     }
     main .resume .resume_1 .resume_1_de li h3{
         width: 120px;
@@ -332,47 +371,61 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
     }
     
     main .resume .resume_1 .resume_1_de li p{
-        padding-left: 10%;
+        padding-left: 5%;
     }
     .fontDown{
         white-space: normal !important;
         width: 100%;
     }
+    
+    main .resume .resume_left{
+        
+    }
     main .resume .resume_left img{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     main .resume .resume_left h3{
-        font-size: 18px;
+        font-size: 20px;
     }
-    .fontDown{font-size: 13px !important;}
+    .fontDown{font-size: 15px !important;}
     main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p{
-        font-size: 13px !important;
+        font-size: 15px !important;
+    }
+       main .resume .resume_1 .resume_1_de{
+        padding: 10px 0;
     }
  
     /*end*/
 }
 
 @media (min-width: 769px) and (max-width: 990px) {
+    main{padding-left: 0;}
     main .resume{
-        margin-left: 0;
+        margin-left: 5%;
         width: 80%;
     }
     main .resume .resume_left{display: none;}
     main .resume .resume_1{
-            padding-top: 10%;
+            padding-top: 12%;
             margin-top: 0%;
-            margin-left: 10%;
+            margin-left: 2%;
     }
-    main .resume .resume_1 h2{
+    main .resume .resume_1>div{
         position: relative;
         text-align: center;
         top: 0;
         left: 0;
         margin: 0;
-        font-size: 90px;
-        margin-bottom: 5%;
+        margin-bottom: 8%;
     }
+      main .resume .resume_1>div h2{
+        font-size: 40px;
+    }
+    main .resume .resume_1 .resume_1_de{
+        padding: 10px 0;
+    }
+
     main .work_1{
         display: none;
     }
@@ -395,38 +448,43 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
     /*end*/
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
- 
+@media (min-width: 551px) and (max-width: 768px) {
+   main{padding-left: 0;}
      main .resume{
-        margin-left: 0;
+        margin-left: 5%;
         width: 90%;
          padding-left:0;
     }
     main .resume .resume_left{display: none;}
-    main .resume .resume_1{
-            padding-top: 10%;
+
+  main .resume .resume_1{
+            padding-top: 12%;
             margin-top: 0%;
-            margin-left: 10%;
+            margin-left: 2%;
     }
-    main .resume .resume_1 h2{
+    main .resume .resume_1>div{
         position: relative;
         text-align: center;
         top: 0;
         left: 0;
         margin: 0;
-        font-size: 90px;
-        margin-bottom: 5%;
+        margin-bottom: 8%;
+    }
+      main .resume .resume_1>div h2{
+        font-size: 30px;
     }
     main .work_1{
         display: none;
     }
     main .resume .resume_1 .resume_1_de li h3{
         font-size: 20px;
+        
+        width: 180px;
     }
     main .resume .resume_1 .resume_1_de li p{
         font-size: 16px;
     }
-    
+  
     .fontDown{
         font-size: 16px !important;
     }
@@ -436,34 +494,42 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
     main .resume .resume_1 .resume_1_de li p{
         white-space: normal;
     }
-    main .resume .resume_1 .resume_1_de:nth-of-type(1) li p{
+    main .resume .resume_1 .resume_1_de:nth-of-type(1) li p,main .resume .resume_1 .resume_1_de:nth-of-type(5) li p{
         white-space: nowrap;
     }
-    
+        main .resume .resume_1 .resume_1_de{
+        padding: 10px 0;
+    }
     
     /*end*/
 }
-@media (max-width: 480px) {
-       main .resume{
-        margin-left: 0;
+@media (max-width: 550px) {
+    main .resume{
+        margin-left: 0%;
         width: 90%;
          padding-left:0;
     }
     main .resume .resume_left{display: none;}
-    main .resume .resume_1{
+
+  main .resume .resume_1{
             padding-top: 15%;
             margin-top: 0%;
-            margin-left: 0%;
+            margin-left: 2%;
     }
-    main .resume .resume_1 h2{
+    main .resume .resume_1>div{
         position: relative;
         text-align: center;
         top: 0;
         left: 0;
         margin: 0;
-        font-size: 60px;
-        margin-bottom: 1%;
-        width: 100%;
+        margin-bottom: 8%;
+    }
+    main .resume .resume_1>div p{
+        width: 90%;
+        font-size: 12px;
+    }
+      main .resume .resume_1>div h2{
+        font-size: 20px;
     }
     main .work_1{
         display: none;
@@ -489,11 +555,13 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
     main .resume .resume_1 .resume_1_de li p{
         white-space: normal;
     }
-    main .resume .resume_1 .resume_1_de:nth-of-type(1) li p{
+    main .resume .resume_1 .resume_1_de:nth-of-type(1) li p,main .resume .resume_1 .resume_1_de:nth-of-type(5) li p{
         white-space: nowrap;
     }
     
    
-    
+    main .resume .resume_1 .resume_1_de{
+        padding: 8px 0;
+    }
 }
 /*# sourceMappingURL=about.css.map */

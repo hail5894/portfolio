@@ -103,32 +103,6 @@ main .work_de .work_de_1 li a .work_de_write p {
     margin-top: 10px;
     padding-left: 40px;
     position: relative;
-    /*  span{
-                        position: absolute;
-                        bottom: 30%;
-                        left: 0%;
-                        width: 10px;
-                        height: 10px;
-                        margin-left: -12px;
-                        border-left: 1px solid $black;
-                        border-bottom: 1px solid $black;
-                        transform: rotate(230deg);
-                        animation: sdb 3s infinite;
-                        box-sizing: border-box;
-                      }
-                      @keyframes sdb {
-                        0% {
-                          transform:translate(0, 0) rotate(230deg);
-                          opacity: 0;
-                        }
-                        50% {
-                          opacity: 1;
-                        }
-                        100% {
-                          transform: translate(40px,0) rotate(230deg);
-                          opacity: 0;
-                        }
-                      } */
 }
 
 main .work_de .work_de_1 li a .work_de_write p span {

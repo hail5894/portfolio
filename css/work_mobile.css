@@ -29,12 +29,13 @@
     }
     
     .popup .goto p{
-    color: #1a1a1a;
+    color: #f4f4f4;
     position: absolute;
     transform: rotate(270deg);
-    font-size: 30px;
-    top: 55%;
-    left: 50%;
+    font-size: 24px;
+     top: 65%;
+    left: 65%;
+
 
     z-index: 300;
 }
@@ -199,13 +200,14 @@
     }
     
     
-.popup .goto p{
-    color: #1a1a1a;
+   .popup .goto p{
+    color: #f4f4f4;
     position: absolute;
     transform: rotate(270deg);
-    font-size: 25px;
-    top: 45%;
-    left: 55%;
+    font-size: 22px;
+    top: 60%;
+    left: 60%;
+
 
     z-index: 300;
 }
@@ -370,7 +372,7 @@
     }
     
 .popup .goto {
-    right: -5%;
+    right: -10%;
     top: 97%;
     transform: rotate(180deg);
  
@@ -405,7 +407,7 @@
     
     border: 1px solid #eee;
     border-radius: 100%;
-    padding: 20%;
+    padding: 15%;
 }
 
 /*1*/
@@ -577,7 +579,7 @@
     }
     
     .popup .goto {
-    right: -5%;
+    right: -10%;
     top: 97%;
     transform: rotate(180deg);
  
@@ -777,8 +779,8 @@
         }
     
     
-       .popup .goto {
-    right: -7%;
+    .popup .goto {
+    right: -9%;
     top: 97%;
     transform: rotate(180deg);
  

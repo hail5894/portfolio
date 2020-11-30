@@ -456,7 +456,7 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
     /*end*/
 }
 
-@media (min-width: 551px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
        main .work_1 {
         overflow: auto;
         }
@@ -520,7 +520,7 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
     
     /*end*/
 }
-@media (max-width: 550px) {
+@media (max-width: 576px) {
     main .work_1 {
         overflow: auto;
     }

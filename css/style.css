@@ -472,6 +472,79 @@ main .main_2 .main_2_1 .tri {
     /* end */
 }
 
+
+
+@media (min-width: 2000px){
+    .work_1{left: 2%;}
+    .work_1 .wo_title .wo_title_top{
+        left: 50%;
+    }
+    .work_1 .wo_title .wo_title_button{
+        left: 45%;
+    }
+    .work_1 .wo_title .wo_title_top p{
+        width: 20px;
+    }
+    .work_1 .wo_title .wo_title_button p{
+        width: 15px;
+    }
+    .work_1 .wo_title{width: 80px;}
+    .work_1 .wo_title .wo_title_top span{
+        font-size: 3rem;
+        transform: rotate(90deg) translate(30px, 30px);
+    }
+    .work_1 .wo_title .wo_title_button span{
+        font-size: 2.5rem;
+    }
+    .work_1 .wo_title .wo_title_button span{
+          font-size: 3rem;
+    }
+    main .main_1 .main_1_1 div .art_head .art_head_1 p{
+        width: 65%;
+    }
+    main .main_1 .main_1_1 div .art_head .art_head_1 h2{
+        font-size: 45rem;
+    }
+    main .main_1 .main_1_1 div .art_head .art_head_2{
+        padding-top: 10%;
+    }
+    main .main_1 .main_1_1 div .art_head .art_head_2 p{
+        font-size: 5rem;
+    }
+    main .main_1 .main_1_1 div .art_main{
+        padding-top: 15%;
+    }
+    main .main_1 .main_1_1 div .art_main p{
+        width: 30vw;
+        height: 30vh;
+    }
+    main .main_1 .main_1_1 div .art_main2 .main_left h3,main .main_1 .main_1_1 div .art_main2 .main_right h3{
+       font-size: 5rem; 
+    }
+    main .main_1 .main_1_1 div .art_main2 .main_left ul,main .main_1 .main_1_1 div .art_main2 .main_right ul{
+        margin-top: 10%;
+    }
+    main .main_1 .main_1_1 div .art_main2{
+        font-size: 3rem; 
+    }
+    .haha{
+        font-size: 4.7rem; 
+    }
+    
+    main .main_2 .main_2_1 .main_2_1-1 span{
+        font-size: 90rem;
+    }
+    main .main_2 .main_2_1 .more{
+        top: 51%;
+    }
+    main .main_2 .main_2_1 .more a h3{
+        font-size: 8rem; 
+    }
+    main .main_2 .main_2_1 .more a p{
+         font-size: 3.5rem;
+    }
+/*end*/
+}
 @media (min-width: 769px) and (max-width: 990px) {
    
     main {

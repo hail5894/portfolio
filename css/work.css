@@ -1175,10 +1175,15 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
     .work_de .work_de_1 .works_imgs img{
         height: 280px;
     }
+
+    main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
+        font-size: 6rem;
+    }
 }
 @media (min-width: 991px) and (max-width: 1251px){
       main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
-        font-size: 57px;
+        font-size: 5.5rem;
+        width: 100%;
         white-space: nowrap;
     }
      .work_de .work_de_1 .works_imgs{

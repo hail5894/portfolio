@@ -116,11 +116,13 @@ main .work_2_seat .work_2{
      overflow-y: hidden;
     position: absolute;
     background: #f4f4f4;
-    
      scrollbar-width: none; /* Firefox */
+    
+    transition: 0.5s cubic-bezier(0,0,.2,1);
+    
 }
 main .work_2_seat .work_2>div{
-   
+ 
     margin-left: 0;
     /*overflow: hidden;*/
     background: #f4f4f4;
@@ -204,7 +206,7 @@ main .work_2_seat .work_2>div .work_goods a .goods_img {
 
 main .work_2_seat .work_2>div .work_goods:hover a .goods_img img{
     transform: scale(1.1);
-        transition: transform .8s cubic-bezier(.455,.03,.515,.955),opacity .5s cubic-bezier(.455,.03,.515,.955);
+        transition: transform .5s cubic-bezier(.455,.03,.515,.955),opacity .5s cubic-bezier(.455,.03,.515,.955);
 }
 main .work_2_seat .work_2>div .work_goods a .goods_img img {
     width: 100%;

@@ -247,12 +247,13 @@ main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p {
     font-style: normal;
     line-height: 1.29;
     letter-spacing: -1.45;
-    font-size: 70px;
+    font-size: 7rem;
     color: #333;
     font-weight: bold;
     margin: 0;
     width: 25vw;
     letter-spacing: -1px;
+    margin-bottom: 10px;
 }
 
 main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
@@ -261,7 +262,7 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
     font-style: normal;
     line-height: 1.29;
     letter-spacing: -1;
-    font-size: 23px;
+    font-size: 2.8rem;
     font-weight: 500;
     color: #444;
     padding-top: 25px;
@@ -1175,16 +1176,15 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
     .work_de .work_de_1 .works_imgs img{
         height: 280px;
     }
-
-    main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
-        font-size: 6rem;
-    }
 }
 @media (min-width: 991px) and (max-width: 1251px){
       main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
-        font-size: 5.5rem;
-        width: 100%;
+        font-size: 6rem;
         white-space: nowrap;
+          width: 100%;
+    }
+    main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p{
+        font-size: 2.3rem;
     }
      .work_de .work_de_1 .works_imgs{
           display: none;
@@ -1285,7 +1285,7 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
         height: auto;
         
     }
-    main .work_2_seat .work_2 > div .work_goods{
+    main .work_2_seat .work_2>div .work_goods{
     border-bottom: 1px solid #1a1a1a;
     display: block;
     height: 220px;
@@ -1297,7 +1297,7 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
     margin:0;
     }
  
-    main .work_2_seat .work_2 > div .work_goods:nth-of-type(1){
+    main .work_2_seat .work_2>div .work_goods:nth-of-type(1){
         margin: 0;
         margin-top: 10%;
         border-top: 1px solid #1a1a1a;
@@ -1306,9 +1306,10 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
         margin: 0 auto;
         margin: 10% 0;
         margin-top: 15%;
+        padding-right: 0;
     }
   
-    main .work_2_seat .work_2 > div .goods_detail a .goods_detail_1 p{
+    main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
         width:auto;
         font-size: 40px;
         font-weight: normal;
@@ -1317,28 +1318,28 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
     
    
     .goods_deta_icon img{
-        width: 30px;
+        width: 5vw;
     }
 
-    main .work_2_seat .work_2 > div .goods_detail a .goods_detail_1 p{
-        font-size: 55px;
+    main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
+        font-size: 6.5rem;
     }
-     main .work_2_seat .work_2 > div .goods_detail a .goods_deta_icon p{
-        font-size: 20px;
+     main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p{
+        font-size: 2.5rem;
         letter-spacing: -1px;
-         font-weight: 800;
+         font-weight: normal;
     }
     
     
     /*그림 상세*/
  
-    main .work_2_seat .work_2 > div .work_goods a{
+    main .work_2_seat .work_2>div .work_goods a{
         width: 90%;
         height: 600px;
         padding-top: 12%;
         position: relative;
     }
-    main .work_2_seat .work_2 > div .work_goods a .goods_img{
+    main .work_2_seat .work_2>div .work_goods a .goods_img{
         width: 90%;
         margin: 0 auto;
           height: 100%;
@@ -1347,7 +1348,7 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
         
     
     }
-    main .work_2_seat .work_2 > div .work_goods a .goods_img img{
+    main .work_2_seat .work_2>div .work_goods a .goods_img img{
     display: inline-flex;
     flex-direction: column;
     height: 100%;
@@ -1356,7 +1357,7 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
   
     
     /*글씨*/
-    main .work_2_seat .work_2 > div .work_goods a .goods_srp{
+    main .work_2_seat .work_2>div .work_goods a .goods_srp{
         position: absolute;
         cursor: pointer;
         left: 0;
@@ -1368,13 +1369,13 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
         justify-content: space-between;
         mix-blend-mode: exclusion;
     }
-    main .work_2_seat .work_2 > div .work_goods a .goods_srp p{
+    main .work_2_seat .work_2>div .work_goods a .goods_srp p{
         color: #1a1a1a;
         font-size: 34px;
          
     }
    
-     main .work_2_seat .work_2 > div .work_goods a .goods_srp p:nth-of-type(2), main .work_2_seat .work_2 > div .work_goods a .goods_srp p:nth-of-type(3){
+     main .work_2_seat .work_2>div .work_goods a .goods_srp p:nth-of-type(2), main .work_2_seat .work_2>div .work_goods a .goods_srp p:nth-of-type(3){
         display: none;
     }
     
@@ -1495,6 +1496,7 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
         margin: 0 auto;
         margin: 10% 0;
         margin-top: 15%;
+        padding-right: 0;
     }
   
     main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
@@ -1504,16 +1506,16 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
     }
     
     .goods_deta_icon img{
-        width: 20px;
+        width: 5vw;
     }
 
     main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
-        font-size: 40px;
+        font-size: 5rem;
     }
      main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p{
-        font-size: 14px;
+        font-size: 2rem;
         letter-spacing: -1px;
-         font-weight: 800;
+         font-weight: normal;
     }
     
     
@@ -1685,6 +1687,7 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
         margin: 0 auto;
         margin: 10% 0;
         margin-top: 15%;
+        padding-right: 0;
     }
   
     main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
@@ -1694,16 +1697,16 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
     }
     
     .goods_deta_icon img{
-        width: 20px;
+        width:7vw;
     }
 
     main .work_2_seat .work_2>div .goods_detail a .goods_detail_1 p{
-        font-size: 40px;
+        font-size: 4rem;
     }
      main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p{
-        font-size: 14px;
+        font-size: 1.8rem;
         letter-spacing: -1px;
-         font-weight: 800;
+         font-weight: normal;
     }
     
     

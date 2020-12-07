@@ -333,9 +333,7 @@ height: 100%;
   font-size: 20px;
   color: #f4f4f4;
 }
-.nav .bottom .bottom_1 span:nth-last-of-type(1){
-    padding: 0 6px;
-} 
+
 .nav .bottom .bottom_1 span a {
   opacity: .8;
   text-decoration: none;

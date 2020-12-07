@@ -1156,7 +1156,6 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
     .goods_deta_icon img{
         width: 3vw !important; height: 4vh !important;
     }
-
     .work_de .work_de_1 li a .work_de_write p span{
         width: 15px;height: 15px;
         border-left: 1px solid #d0d0d0;
@@ -1200,7 +1199,6 @@ main .work_2_seat .work_2>div .goods_detail a .goods_deta_icon p {
     .work_de .work_de_1 li a .work_de_write h3{
         font-size: 26px;
     }
-
 }
 
 @media (min-width: 769px) and (max-width: 990px) {

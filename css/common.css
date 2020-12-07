@@ -695,13 +695,13 @@ height: 100%;
         right: calc(100% + 40px);
     }
     .right a img, .bottom_2 a img{
-        width: 60px;
-        height: 60px;
+        width: 2vw;
+        height: 3vh;
     }
     .right .right_a a .arrow_box, .bottom_2 a .arrow_box{
         width: 250px;
         right: -100%;
-        font-size: 4rem;
+        font-size: 3rem;
         bottom: 155%;
     }
     .bottom_2 a .arrow_box:after{
@@ -709,26 +709,27 @@ height: 100%;
     }
     .right .right_a a .arrow_box:after{
          border-width: 20px;
+         left: 52%;
     }
     .nav .bottom .bottom_1 span a{opacity: 1;}
     .contact_popup{
         top: 5%;
         width: 25%;
-        height: 35%;
+        height: 32%;
     }
     .contact_popup .right .title{
-        font-size: 5.5rem;
+        font-size: 5.1rem;
         line-height: .5;
     }
     .contact_popup .right .right_1 .right_1_de{
         padding: 3% 0;
     }
     .contact_popup .right .right_1 .right_1_de h3{
-        font-size: 4rem;
+        font-size: 3.5rem;
         width: 45%;
     }
     .contact_popup .right .right_1 .right_1_de p{
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
     .right a img:nth-of-type(1){margin: 0 10px;}
     .contact_popup .right .x{font-size: 5rem;}

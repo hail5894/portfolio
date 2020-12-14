@@ -462,7 +462,7 @@
         font-size: 21px;
     }
     .popup .popup_seat .popup_3 .right_detail .right_de_1 p:nth-of-type(2){
-        font-size: 14px;
+        font-size: 15px;
     }
     
 }
@@ -670,6 +670,9 @@
     
     .popup_3_detail{
         width: 100% !important;
+    }
+    .popup .popup_seat .popup_3 .right_detail .right_de_1 p:nth-of-type(2){
+          font-size: 15px;
     }
  /*end*/
 }

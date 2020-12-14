@@ -389,14 +389,14 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
 }
 @media (max-width: 1500px) and (min-width: 1252px) {
     main .resume .resume_1{
-      padding-top:20%;
+      padding-top:15%;
     }
    main .resume .resume_1 .resume_1_de li{
         line-height: 1.0em;
     }
     main .resume .resume_left{
         padding-left: 3%;
-        padding-top: 24%;
+        padding-top: 20%;
     }
     main .resume .hi{
         left: 22%;
@@ -448,7 +448,7 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
         width: 90%;
     }
     main .resume .resume_1{
-        padding-top: 24%;
+        padding-top: 15%;
         margin-left: 10%;
     }
    main .resume .resume_1 .resume_1_de li{
@@ -456,7 +456,7 @@ main .resume .resume_1 .resume_1_hi li .resume_1_hi_1 .question p span {
     }
     main .resume .resume_left{
         padding-left: 0%;
-        padding-top: 25%;
+        padding-top: 20%;
     }
      main .resume .hi{
         left: 22%;
